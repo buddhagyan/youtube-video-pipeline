@@ -1,0 +1,37 @@
+{
+  "scenes": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 6,
+      "duration": 6,
+      "footage_query": "Voyager 1 launch Titan IIIE-Centaur Cape Canaveral 1977",
+      "source_preference": "nasa",
+      "animation_type": "ken_burns_zoom",
+      "text_overlay": "Voyager 1 — September 5, 1977",
+      "sfx_cue": "rocket_launch_rumble"
+    },
+    {
+      "id": 2,
+      "start": 6,
+      "end": 13,
+      "duration": 7,
+      "footage_query": "Voyager Golden Record cover",
+      "source_preference": "wikimedia",
+      "animation_type": "text_overlay",
+      "text_overlay": "The Golden Record — a message to the stars",
+      "sfx_cue": "vinyl_crackle"
+    },
+    {
+      "id": 3,
+      "start": 13,
+      "end": 20,
+      "duration": 7,
+      "footage_query": "Voyager 1 interstellar space heliopause artist concept",
+      "source_preference": "nasa",
+      "animation_type": "timeline_bar",
+      "text_overlay": "August 25, 2012 — Voyager 1 enters interstellar space",
+      "sfx_cue": "deep_space_ambience"
+    }
+  ]
+}

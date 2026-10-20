@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dsh.local/remotion/scenes/schema.json",
+  "title": "Scene list",
+  "description": "Timeline document consumed by the Remotion compositions. All times are in SECONDS (not frames). Scene 1 must start at 0 and every scene must begin exactly where the previous one ends, so the sequence has no gaps or overlaps.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["scenes"],
+  "properties": {
+    "scenes": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Ordered, non-overlapping scenes.",
+      "items": { "$ref": "#/$defs/scene" }
+    }
+  },
+  "$defs": {
+    "scene": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "start",
+        "end",
+        "duration",
+        "footage_query",
+        "source_preference",
+        "animation_type",
+        "text_overlay",
+        "sfx_cue"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Stable, unique scene number. Also used as the scene's NAME."
+        },
+        "start": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Start time in seconds, inclusive."
+        },
+        "end": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "description": "End time in seconds, exclusive. Must be greater than start."
+        },
+        "duration": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "description": "Length in seconds. Must equal end - start; src/scenes.ts rejects the file when it does not."
+        },
+        "footage_query": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "description": "Search term used to find the footage on NASA / Wikimedia Commons / Internet Archive."
+        },
+        "source_preference": {
+          "type": "string",
+          "enum": ["nasa", "wikimedia", "archive"],
+          "description": "Preferred archive. A fallback source is allowed at fetch time."
+        },
+        "animation_type": {
+          "type": "string",
+          "enum": ["ken_burns_zoom", "text_overlay", "timeline_bar"],
+          "description": "Which Remotion component renders this scene."
+        },
+        "text_overlay": {
+          "type": ["string", "null"],
+          "description": "On-screen text. null means the scene shows no text."
+        },
+        "sfx_cue": {
+          "type": ["string", "null"],
+          "description": "Sound-effect cue name resolved against the audio library. null means silent."
+        }
+      }
+    }
+  }
+}
