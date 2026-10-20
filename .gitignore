@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Rendered video output
+*.mp4
+out/
+
+# Raw footage: ignore the media, but keep the folder itself in the repo
+footage/*
+!footage/.gitkeep
+
+# .gitkeep placeholders keep otherwise-empty directories tracked
+!.gitkeep
+
+# Local render scratch space (set TEMP here when the system temp dir is locked)
+.tmp-render/
+
+# Chromium writes this next to the project when a render opens the browser
+debug.log
