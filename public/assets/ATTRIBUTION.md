@@ -1,7 +1,20 @@
 # Demo assets
 
-These files are only here so the test compositions have something real to render.
+These files are only here so the compositions have something real to render.
 They are not part of the final video.
+
+All three are works of the U.S. federal government (NASA), public domain.
+They were downloaded from Wikimedia Commons at 1920 px wide.
+
+## `assets/voyager-1-launch-1977.jpg`
+
+| | |
+|---|---|
+| Subject | Voyager 1 lifting off on a Titan IIIE-Centaur, 5 September 1977 |
+| Source | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Voyager_1_Launch.jpg) |
+| Author | NASA on The Commons |
+| License | Public domain |
+| Original | 2355×3000 (portrait) |
 
 ## `assets/voyager-golden-record-gold-plating.jpg`
 
@@ -11,8 +24,22 @@ They are not part of the final video.
 | Source | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Voyager-golden-record-gold-plating-8-23-77_30217620534_o.jpg) |
 | Original | [NASA/JPL — Making of the Golden Record](https://voyager.jpl.nasa.gov/golden-record/making-of-the-golden-record/) |
 | Author | NASA/JPL |
-| License | Public domain (work of the U.S. federal government) |
-| Downloaded | 1920 px wide JPEG, 446 KB |
+| License | Public domain |
+| Original | 2828×2172 |
 
-Note: the source is 2828×2172 (4:3-ish), while the video is 16:9, so `objectFit: cover`
-crops the top and bottom. That is expected for stills in this style.
+## `assets/pale-blue-dot-1990.jpg`
+
+| | |
+|---|---|
+| Subject | *Pale Blue Dot* — Earth from 6 billion km, taken by Voyager 1 on 14 February 1990 |
+| Source | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pale_Blue_Dot_from_Voyager_1_-_PIA23645.png) |
+| Author | NASA/JPL-Caltech |
+| License | Public domain |
+| Original | 5230×5175 |
+
+## Cropping note
+
+The video is 16:9. The launch photo is portrait (2355×3000) and the other two are
+close to square, so `objectFit: cover` crops top and bottom. Per-scene
+`focalPoint` in `src/assets.ts` decides which part stays in frame. That is
+expected for a stills-driven documentary cut.

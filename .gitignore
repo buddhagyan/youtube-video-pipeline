@@ -17,3 +17,10 @@ footage/*
 
 # Chromium writes this next to the project when a render opens the browser
 debug.log
+
+# Analysis scratch: extracted frames, contact sheets, audio decodes, scene logs
+.analysis/
+
+# Temp dirs used by the Remotion renders above
+.tmp-render-a/
+.tmp-render-b/
