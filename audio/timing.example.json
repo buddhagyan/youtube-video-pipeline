@@ -1,0 +1,120 @@
+{
+ "generated_at": "2026-10-21T07:09:11+05:30",
+ "source": "audio/test-vo.mp3",
+ "duration_s": 3.87,
+ "language": "auto",
+ "backend": "whisper.cpp",
+ "model": "ggml-base.bin",
+ "word_source": "tokens",
+ "word_count": 9,
+ "words": [
+  {
+   "word": "This",
+   "start": 0.12,
+   "end": 0.29,
+   "index": 1
+  },
+  {
+   "word": "is",
+   "start": 0.29,
+   "end": 0.43,
+   "index": 2
+  },
+  {
+   "word": "a",
+   "start": 0.43,
+   "end": 0.5,
+   "index": 3
+  },
+  {
+   "word": "test",
+   "start": 0.5,
+   "end": 0.79,
+   "index": 4
+  },
+  {
+   "word": "of",
+   "start": 0.79,
+   "end": 0.93,
+   "index": 5
+  },
+  {
+   "word": "word-level",
+   "start": 0.93,
+   "end": 1.64,
+   "index": 6
+  },
+  {
+   "word": "timestamps",
+   "start": 1.65,
+   "end": 2.38,
+   "index": 7
+  },
+  {
+   "word": "for",
+   "start": 2.38,
+   "end": 2.6,
+   "index": 8
+  },
+  {
+   "word": "captions.",
+   "start": 2.6,
+   "end": 3.48,
+   "index": 9
+  }
+ ],
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 0.12,
+   "text": ""
+  },
+  {
+   "start": 0.12,
+   "end": 0.29,
+   "text": "This"
+  },
+  {
+   "start": 0.29,
+   "end": 0.43,
+   "text": "is"
+  },
+  {
+   "start": 0.43,
+   "end": 0.5,
+   "text": "a"
+  },
+  {
+   "start": 0.5,
+   "end": 0.79,
+   "text": "test"
+  },
+  {
+   "start": 0.79,
+   "end": 0.93,
+   "text": "of"
+  },
+  {
+   "start": 0.93,
+   "end": 1.65,
+   "text": "word-level"
+  },
+  {
+   "start": 1.65,
+   "end": 2.38,
+   "text": "timestamps"
+  },
+  {
+   "start": 2.38,
+   "end": 2.6,
+   "text": "for"
+  },
+  {
+   "start": 2.6,
+   "end": 3.48,
+   "text": "captions."
+  }
+ ],
+ "text": "This is a test of word-level timestamps for captions.",
+ "notes": "start/end are seconds from the beginning of the file; words are sorted and clipped so start < end; segment timings are whisper's own, word timings are the merged tokens."
+}

@@ -28,3 +28,14 @@ debug.log
 # Local toolchain downloads (whisper.cpp binaries + model, ~150 MB)
 .tools/
 __pycache__/
+
+# Transcribe scratch dir (inside the repo because %TEMP% is not writable here)
+.tmp/
+
+# Voiceover audio: keep the tiny test fixture, ignore real voiceovers and outputs
+audio/*.wav
+audio/*.m4a
+audio/*.ogg
+audio/timing.json
+!audio/test-vo.mp3
+
