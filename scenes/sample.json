@@ -3,35 +3,54 @@
     {
       "id": 1,
       "start": 0,
-      "end": 6,
-      "duration": 6,
-      "footage_query": "Voyager 1 launch Titan IIIE-Centaur Cape Canaveral 1977",
+      "end": 3,
+      "duration": 3,
+      "footage_query": "Voyager 1 launch date card",
       "source_preference": "nasa",
-      "animation_type": "ken_burns_zoom",
-      "text_overlay": "Voyager 1 — September 5, 1977",
-      "sfx_cue": "rocket_launch_rumble"
+      "animation_type": "date_label",
+      "text_overlay": "5 SEPTEMBER 1977",
+      "card_image": null,
+      "sfx_cue": "low_boom",
+      "transition_in": "cut"
     },
     {
       "id": 2,
-      "start": 6,
-      "end": 13,
-      "duration": 7,
-      "footage_query": "Voyager Golden Record cover",
-      "source_preference": "wikimedia",
-      "animation_type": "text_overlay",
-      "text_overlay": "The Golden Record — a message to the stars",
-      "sfx_cue": "vinyl_crackle"
+      "start": 3,
+      "end": 9,
+      "duration": 6,
+      "footage_query": "Voyager Golden Record gold plating, JPL clean room",
+      "source_preference": "nasa",
+      "animation_type": "ken_burns_zoom",
+      "text_overlay": null,
+      "card_image": null,
+      "sfx_cue": "clean_room_tone",
+      "transition_in": "cut"
     },
     {
       "id": 3,
-      "start": 13,
+      "start": 9,
+      "end": 17,
+      "duration": 8,
+      "footage_query": "newspaper front page, Voyager 1 launch, September 1977",
+      "source_preference": "archive",
+      "animation_type": "still_card",
+      "text_overlay": null,
+      "card_image": "assets/news-card-1977.png",
+      "sfx_cue": "paper_rustle",
+      "transition_in": "cut"
+    },
+    {
+      "id": 4,
+      "start": 17,
       "end": 20,
-      "duration": 7,
-      "footage_query": "Voyager 1 interstellar space heliopause artist concept",
-      "source_preference": "nasa",
-      "animation_type": "timeline_bar",
-      "text_overlay": "August 25, 2012 — Voyager 1 enters interstellar space",
-      "sfx_cue": "deep_space_ambience"
+      "duration": 3,
+      "footage_query": "channel end card",
+      "source_preference": "archive",
+      "animation_type": "end_card",
+      "text_overlay": "THE DAILY RECORD",
+      "card_image": null,
+      "sfx_cue": "outro_sting",
+      "transition_in": "cut"
     }
   ]
 }

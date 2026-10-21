@@ -2,7 +2,8 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://dsh.local/remotion/scenes/schema.json",
   "title": "Scene list",
-  "description": "Timeline document consumed by the Remotion compositions. All times are in SECONDS (not frames). Scene 1 must start at 0 and every scene must begin exactly where the previous one ends, so the sequence has no gaps or overlaps.",
+  "description": "Timeline document consumed by the Remotion compositions. All times are in SECONDS (not frames). Scene 1 must start at 0 and every scene must begin exactly where the previous one ends, so the sequence has no gaps or overlaps. Locked to the Mighty Monk formula measured on six films: default scene 3-6 s, news cards 6-45 s, end card 6-20 s, and hard cuts only.",
+  "$comment": "Duration policy (measured, data in scenes/mighty-monk-master-analysis.json): footage / date scenes 3-6 s, still_card 6-45 s, end_card 6-20 s. Transitions are hard cuts only - the six reference films contained one fade in 1,643 shots, so fade is not offered at all.",
   "type": "object",
   "additionalProperties": false,
   "required": ["scenes"],
@@ -27,7 +28,8 @@
         "source_preference",
         "animation_type",
         "text_overlay",
-        "sfx_cue"
+        "sfx_cue",
+        "transition_in"
       ],
       "properties": {
         "id": {
@@ -48,13 +50,14 @@
         "duration": {
           "type": "number",
           "exclusiveMinimum": 0,
-          "description": "Length in seconds. Must equal end - start; src/scenes.ts rejects the file when it does not."
+          "default": 4.5,
+          "description": "Length in seconds. Must equal end - start; src/scenes.ts rejects the file when it does not. Default 3-6 s for footage and date scenes; still_card holds 6-45 s; end_card holds 6-20 s."
         },
         "footage_query": {
           "type": "string",
           "minLength": 1,
           "maxLength": 200,
-          "description": "Search term used to find the footage on NASA / Wikimedia Commons / Internet Archive."
+          "description": "Search term used to find the footage on NASA / Wikimedia Commons / Internet Archive. For still_card it describes the news card instead."
         },
         "source_preference": {
           "type": "string",
@@ -63,16 +66,33 @@
         },
         "animation_type": {
           "type": "string",
-          "enum": ["ken_burns_zoom", "text_overlay", "timeline_bar"],
-          "description": "Which Remotion component renders this scene."
+          "enum": [
+            "ken_burns_zoom",
+            "text_overlay",
+            "timeline_bar",
+            "still_card",
+            "date_label",
+            "end_card"
+          ],
+          "description": "Which Remotion component renders this scene. ken_burns_zoom / text_overlay / timeline_bar are footage scenes; still_card is a news-article screenshot held on black; date_label is the big white date card; end_card is the channel card that closes the film."
         },
         "text_overlay": {
           "type": ["string", "null"],
-          "description": "On-screen text. null means the scene shows no text."
+          "description": "On-screen text. For date_label this is the date itself ('18'TH MAY 1974'). For end_card it is the channel line. null means the scene shows no text."
+        },
+        "card_image": {
+          "type": ["string", "null"],
+          "description": "Resolved image for a still_card scene (news screenshot or newspaper page). null for every other animation_type."
         },
         "sfx_cue": {
           "type": ["string", "null"],
           "description": "Sound-effect cue name resolved against the audio library. null means silent."
+        },
+        "transition_in": {
+          "type": "string",
+          "enum": ["cut"],
+          "default": "cut",
+          "description": "How this scene enters. Only 'cut' exists: the reference films use hard cuts almost exclusively, so no fade or dissolve option is offered."
         }
       }
     }

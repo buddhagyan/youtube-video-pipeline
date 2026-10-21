@@ -37,9 +37,25 @@ They were downloaded from Wikimedia Commons at 1920 px wide.
 | License | Public domain |
 | Original | 5230×5175 |
 
+## `assets/news-card-1977.png`
+
+| | |
+|---|---|
+| What it is | A **synthetic** 1977 newspaper page, drawn from scratch for the `still_card` test |
+| Made by | `scripts/make_card_asset.py` (PIL + system fonts) |
+| Words | Original text written for this repo — not copied from any publication |
+| Photo inside | NASA/JPL launch photo above (public domain) |
+| Masthead | "The Daily Record" is a fictional outlet, close to the Mighty Monk card style |
+
+It exists so `NewsCard` has an article-shaped image to hold. Replace it with a
+real clipping when the news-card pipeline lands.
+
 ## Cropping note
 
 The video is 16:9. The launch photo is portrait (2355×3000) and the other two are
 close to square, so `objectFit: cover` crops top and bottom. Per-scene
 `focalPoint` in `src/assets.ts` decides which part stays in frame. That is
 expected for a stills-driven documentary cut.
+
+`still_card` scenes do **not** crop: `NewsCard` fits the page by height (or width)
+inside the 16:9 frame, leaving black around it, exactly as the reference films do.

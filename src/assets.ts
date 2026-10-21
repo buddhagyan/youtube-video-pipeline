@@ -12,29 +12,17 @@ export type SceneAsset = {
 };
 
 /**
- * Resolved footage per scene id. This is the bridge between the timeline
- * (`scenes/sample.json`, which stores a search intent) and the actual file.
- * Once footage fetching is automated this map is what gets generated.
+ * Resolved picture per scene id for the footage scenes. Date cards, news cards
+ * and end cards carry their image (or lack of one) in scenes/sample.json itself
+ * (`card_image`), so they are not listed here.
+ *
+ * This is the bridge between the timeline (which stores a search intent) and the
+ * actual file; once footage fetching is automated, this map is what gets written.
  */
 export const SCENE_ASSETS: Record<number, SceneAsset> = {
-  1: {
-    src: staticFile('assets/voyager-1-launch-1977.jpg'),
-    focalPoint: {x: 0.5, y: 0.42},
-    zoomTo: 1.12,
-  },
   2: {
     src: staticFile('assets/voyager-golden-record-gold-plating.jpg'),
     focalPoint: {x: 0.45, y: 0.5},
-    zoomTo: 1.12,
-  },
-  3: {
-    src: staticFile('assets/pale-blue-dot-1990.jpg'),
-    focalPoint: {x: 0.5, y: 0.5},
     zoomTo: 1.1,
-    timelineLabels: [
-      {at: 0, label: '1977'},
-      {at: 3.5, label: '1990'},
-      {at: 7, label: '2012'},
-    ],
   },
 };
