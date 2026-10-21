@@ -1,0 +1,112 @@
+name: Render video
+
+# Manual trigger only: pick a composition, render it on a GitHub runner, download
+# the MP4 from the run's "Artifacts" section.
+on:
+  workflow_dispatch:
+    inputs:
+      composition:
+        description: Composition to render
+        type: choice
+        default: SampleScenes
+        options:
+          - SampleScenes
+          - HelloWorld
+          - KenBurnsTest
+          - TextOverlayTest
+          - TimelineBarTest
+      output:
+        description: Output file name (inside out/)
+        type: string
+        default: render.mp4
+      frames:
+        description: Optional frame range, e.g. 0-149 (empty renders the whole film)
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: render-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  render:
+    name: Render ${{ inputs.composition }}
+    runs-on: ubuntu-22.04
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22.x"
+          cache: npm
+
+      # Chromium needs these shared libraries; without them the headless shell
+      # fails with a missing-library error before the first frame.
+      - name: Install Chromium dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libgbm1 \
+            libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libxss1 \
+            libasound2 libpango-1.0-0 libcairo2 libxkbcommon0 \
+            fonts-liberation
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      # npm ci wipes node_modules, so the downloaded Chrome Headless Shell cannot be
+      # cached there. It is ~120 MB and downloads in a few seconds on the runner.
+      - name: Ensure Remotion browser
+        run: npx remotion browser ensure
+
+      - name: Render
+        env:
+          COMPOSITION: ${{ inputs.composition }}
+          OUTPUT: ${{ inputs.output }}
+          FRAMES: ${{ inputs.frames }}
+        run: |
+          set -euo pipefail
+          mkdir -p out
+          ARGS=()
+          if [ -n "${FRAMES}" ]; then
+            ARGS+=("--frames=${FRAMES}")
+          fi
+          npx remotion render "${COMPOSITION}" "out/${OUTPUT}" "${ARGS[@]}" --log=info
+
+      - name: Show output
+        run: ls -lh out/ && du -sh out/
+
+      - name: Upload MP4
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.composition }}-${{ github.run_number }}
+          path: out/*.mp4
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### Render: ${{ inputs.composition }}"
+            echo ""
+            echo "| | |"
+            echo "|---|---|"
+            echo "| Composition | \`${{ inputs.composition }}\` |"
+            echo "| Output | \`out/${{ inputs.output }}\` |"
+            echo "| Frames | \`${{ inputs.frames }}\` (empty = full) |"
+            echo "| Node | $(node --version) |"
+            echo ""
+            if [ -d out ] && [ -n "$(ls -A out 2>/dev/null)" ]; then
+              echo "**Artifact:** download \`${{ inputs.composition }}-${{ github.run_number }}\` from the Artifacts section of this run."
+            else
+              echo "**No output produced.**"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
