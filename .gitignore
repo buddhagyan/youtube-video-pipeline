@@ -24,3 +24,7 @@ debug.log
 # Temp dirs used by the Remotion renders above
 .tmp-render-a/
 .tmp-render-b/
+
+# Local toolchain downloads (whisper.cpp binaries + model, ~150 MB)
+.tools/
+__pycache__/

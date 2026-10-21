@@ -1,0 +1,3068 @@
+{
+ "method": {
+  "audio": "ffmpeg band split per film: voice 250-3500 Hz, bed = <250 Hz + >3500 Hz, air = 4-8 kHz, 100 ms RMS",
+  "word_timings": "YouTube auto-caption inline word timestamps (hi)",
+  "pauses": "gaps between consecutive caption word onsets > 0.6 s (proxy: the continuous music bed makes acoustic silence detection unusable)",
+  "ducking": "median bed/air level in speech gaps (>0.8 s) minus median under speech, plus bed level before vs after a speech onset",
+  "whisper": "whisper.cpp ggml-base (int8), 120 s slice per film — independent speed check, not full-length transcription"
+ },
+ "summary": {
+  "wpm_speaking": [
+   174.1,
+   138.2,
+   165.8,
+   164.5,
+   163.1,
+   137.1
+  ],
+  "wpm_gross": [
+   173.2,
+   137.4,
+   164.5,
+   163.2,
+   161.9,
+   136.0
+  ],
+  "words": [
+   6716,
+   5254,
+   4262,
+   4458,
+   4500,
+   3740
+  ],
+  "pause_median_s": [
+   0.72,
+   0.78,
+   0.72,
+   0.72,
+   0.72,
+   0.84
+  ],
+  "pause_max_s": [
+   12.0,
+   19.68,
+   4.64,
+   20.32,
+   7.88,
+   27.78
+  ],
+  "pauses_per_min": [
+   16.48,
+   29.98,
+   17.71,
+   17.79,
+   20.8,
+   27.23
+  ],
+  "duck_depth_db": [
+   -0.0,
+   -0.5,
+   -0.2,
+   -0.1,
+   -0.5,
+   -1.9
+  ],
+  "air_duck_db": [
+   -0.4,
+   -1.1,
+   -1.1,
+   -0.2,
+   -0.6,
+   -2.4
+  ],
+  "speech_pct": [
+   95.8,
+   87.4,
+   95.4,
+   93.1,
+   95.4,
+   82.0
+  ],
+  "medians": {
+   "wpm_speaking": 163.8,
+   "wpm_gross": 162.55,
+   "words": 4479.0,
+   "pause_median_s": 0.72,
+   "pause_max_s": 15.84,
+   "pauses_per_min": 19.3,
+   "duck_depth_db": -0.35,
+   "air_duck_db": -0.85,
+   "speech_pct": 94.25
+  }
+ },
+ "videos": [
+  {
+   "video_id": "5DTtkRhla3A",
+   "title": null,
+   "duration_s": 2326.9,
+   "narration": {
+    "words": 6716,
+    "speech_span_s": 2314.6,
+    "wpm_speaking": 174.1,
+    "wpm_gross": 173.2,
+    "speech_pct_of_runtime": 95.8,
+    "per_minute": [
+     {
+      "minute": 0,
+      "words": 181,
+      "wpm": 181.0
+     },
+     {
+      "minute": 1,
+      "words": 174,
+      "wpm": 174.0
+     },
+     {
+      "minute": 2,
+      "words": 176,
+      "wpm": 176.0
+     },
+     {
+      "minute": 3,
+      "words": 179,
+      "wpm": 179.0
+     },
+     {
+      "minute": 4,
+      "words": 173,
+      "wpm": 173.0
+     },
+     {
+      "minute": 5,
+      "words": 153,
+      "wpm": 153.0
+     },
+     {
+      "minute": 6,
+      "words": 188,
+      "wpm": 188.0
+     },
+     {
+      "minute": 7,
+      "words": 190,
+      "wpm": 190.0
+     },
+     {
+      "minute": 8,
+      "words": 172,
+      "wpm": 172.0
+     },
+     {
+      "minute": 9,
+      "words": 189,
+      "wpm": 189.0
+     },
+     {
+      "minute": 10,
+      "words": 157,
+      "wpm": 157.0
+     },
+     {
+      "minute": 11,
+      "words": 172,
+      "wpm": 172.0
+     },
+     {
+      "minute": 12,
+      "words": 162,
+      "wpm": 162.0
+     },
+     {
+      "minute": 13,
+      "words": 177,
+      "wpm": 177.0
+     },
+     {
+      "minute": 14,
+      "words": 168,
+      "wpm": 168.0
+     },
+     {
+      "minute": 15,
+      "words": 182,
+      "wpm": 182.0
+     },
+     {
+      "minute": 16,
+      "words": 137,
+      "wpm": 137.0
+     },
+     {
+      "minute": 17,
+      "words": 177,
+      "wpm": 177.0
+     },
+     {
+      "minute": 18,
+      "words": 176,
+      "wpm": 176.0
+     },
+     {
+      "minute": 19,
+      "words": 186,
+      "wpm": 186.0
+     },
+     {
+      "minute": 20,
+      "words": 175,
+      "wpm": 175.0
+     },
+     {
+      "minute": 21,
+      "words": 171,
+      "wpm": 171.0
+     },
+     {
+      "minute": 22,
+      "words": 187,
+      "wpm": 187.0
+     },
+     {
+      "minute": 23,
+      "words": 182,
+      "wpm": 182.0
+     },
+     {
+      "minute": 24,
+      "words": 191,
+      "wpm": 191.0
+     },
+     {
+      "minute": 25,
+      "words": 183,
+      "wpm": 183.0
+     },
+     {
+      "minute": 26,
+      "words": 177,
+      "wpm": 177.0
+     },
+     {
+      "minute": 27,
+      "words": 165,
+      "wpm": 165.0
+     },
+     {
+      "minute": 28,
+      "words": 185,
+      "wpm": 185.0
+     },
+     {
+      "minute": 29,
+      "words": 171,
+      "wpm": 171.0
+     },
+     {
+      "minute": 30,
+      "words": 177,
+      "wpm": 177.0
+     },
+     {
+      "minute": 31,
+      "words": 172,
+      "wpm": 172.0
+     },
+     {
+      "minute": 32,
+      "words": 168,
+      "wpm": 168.0
+     },
+     {
+      "minute": 33,
+      "words": 169,
+      "wpm": 169.0
+     },
+     {
+      "minute": 34,
+      "words": 176,
+      "wpm": 176.0
+     },
+     {
+      "minute": 35,
+      "words": 170,
+      "wpm": 170.0
+     },
+     {
+      "minute": 36,
+      "words": 168,
+      "wpm": 168.0
+     },
+     {
+      "minute": 37,
+      "words": 164,
+      "wpm": 164.0
+     },
+     {
+      "minute": 38,
+      "words": 96,
+      "wpm": 122.9
+     }
+    ]
+   },
+   "pauses": {
+    "count": 639,
+    "median_s": 0.72,
+    "p90_s": 0.97,
+    "max_s": 12.0,
+    "per_minute": 16.48,
+    "histogram": {
+     "0.6-0.8s": 422,
+     "0.8-1.2s": 203,
+     "1.2-2.0s": 10,
+     "2.0-3.0s": 0,
+     "3.0s+": 4
+    },
+    "dramatic_pauses": [
+     {
+      "at": 334.44,
+      "length_s": 12.0,
+      "before": "यहां"
+     },
+     {
+      "at": 959.6,
+      "length_s": 8.2,
+      "before": "स्ािल"
+     },
+     {
+      "at": 640.04,
+      "length_s": 7.8,
+      "before": "को"
+     },
+     {
+      "at": 1000.76,
+      "length_s": 6.28,
+      "before": "में"
+     }
+    ],
+    "measurement_note": "True acoustic pauses cannot be isolated here: the music bed fills the voice band, so an energy-based silence detector finds almost nothing. These gaps come from caption word onsets, which cover ~75-90% of the spoken words, so gaps of 0.6-1.0 s are partly caption artefacts. The >=1.5 s list (with timestamps) is the trustworthy part."
+   },
+   "ducking": {
+    "voice_level_db": -16.3,
+    "bed_under_voice_db": -13.9,
+    "bed_in_gaps_db": -13.9,
+    "duck_depth_db": -0.0,
+    "air_under_voice_db": -33.4,
+    "air_in_gaps_db": -33.8,
+    "air_duck_db": -0.4,
+    "bed_onset_delta_db": 0.2,
+    "onsets_measured": 192,
+    "verdict": "no ducking: the bed sits at the same level whether the narrator is speaking or silent (|delta| < 2 dB on both probes)",
+    "bed_loud_threshold_db": -13.6,
+    "loud_music_windows": [
+     {
+      "from_s": 540,
+      "bed_db": -13.5,
+      "to_s": 600,
+      "peak_bed_db": -13.5
+     },
+     {
+      "from_s": 1440,
+      "bed_db": -13.5,
+      "to_s": 1500,
+      "peak_bed_db": -13.5
+     },
+     {
+      "from_s": 1680,
+      "bed_db": -13.5,
+      "to_s": 1740,
+      "peak_bed_db": -13.5
+     },
+     {
+      "from_s": 2040,
+      "bed_db": -13.5,
+      "to_s": 2100,
+      "peak_bed_db": -13.5
+     }
+    ],
+    "minute_timeline": [
+     {
+      "minute": 0,
+      "voice_db": -16.6,
+      "bed_db": -14.1,
+      "bed_in_gaps_db": -13.9,
+      "speech_pct": 97.0
+     },
+     {
+      "minute": 1,
+      "voice_db": -16.6,
+      "bed_db": -14.3,
+      "bed_in_gaps_db": -14.0,
+      "speech_pct": 96.8
+     },
+     {
+      "minute": 2,
+      "voice_db": -16.4,
+      "bed_db": -14.2,
+      "bed_in_gaps_db": -13.3,
+      "speech_pct": 96.5
+     },
+     {
+      "minute": 3,
+      "voice_db": -16.2,
+      "bed_db": -13.6,
+      "bed_in_gaps_db": -12.1,
+      "speech_pct": 98.2
+     },
+     {
+      "minute": 4,
+      "voice_db": -16.1,
+      "bed_db": -13.6,
+      "bed_in_gaps_db": -14.2,
+      "speech_pct": 97.8
+     },
+     {
+      "minute": 5,
+      "voice_db": -16.0,
+      "bed_db": -13.6,
+      "bed_in_gaps_db": -13.8,
+      "speech_pct": 80.0
+     },
+     {
+      "minute": 6,
+      "voice_db": -15.8,
+      "bed_db": -13.6,
+      "bed_in_gaps_db": -15.8,
+      "speech_pct": 98.0
+     },
+     {
+      "minute": 7,
+      "voice_db": -16.1,
+      "bed_db": -14.0,
+      "bed_in_gaps_db": -15.2,
+      "speech_pct": 99.3
+     },
+     {
+      "minute": 8,
+      "voice_db": -16.4,
+      "bed_db": -14.0,
+      "bed_in_gaps_db": -13.9,
+      "speech_pct": 98.5
+     },
+     {
+      "minute": 9,
+      "voice_db": -16.2,
+      "bed_db": -13.5,
+      "bed_in_gaps_db": -13.3,
+      "speech_pct": 97.8
+     },
+     {
+      "minute": 10,
+      "voice_db": -16.0,
+      "bed_db": -14.1,
+      "bed_in_gaps_db": -14.4,
+      "speech_pct": 86.0
+     },
+     {
+      "minute": 11,
+      "voice_db": -16.2,
+      "bed_db": -14.0,
+      "bed_in_gaps_db": -12.8,
+      "speech_pct": 96.5
+     },
+     {
+      "minute": 12,
+      "voice_db": -16.1,
+      "bed_db": -13.8,
+      "bed_in_gaps_db": -17.3,
+      "speech_pct": 98.0
+     },
+     {
+      "minute": 13,
+      "voice_db": -16.3,
+      "bed_db": -14.7,
+      "bed_in_gaps_db": -18.4,
+      "speech_pct": 98.3
+     },
+     {
+      "minute": 14,
+      "voice_db": -16.4,
+      "bed_db": -13.9,
+      "bed_in_gaps_db": -13.7,
+      "speech_pct": 95.3
+     },
+     {
+      "minute": 15,
+      "voice_db": -16.3,
+      "bed_db": -14.0,
+      "bed_in_gaps_db": -15.5,
+      "speech_pct": 98.8
+     },
+     {
+      "minute": 16,
+      "voice_db": -16.3,
+      "bed_db": -14.1,
+      "bed_in_gaps_db": -14.0,
+      "speech_pct": 76.8
+     },
+     {
+      "minute": 17,
+      "voice_db": -16.2,
+      "bed_db": -14.2,
+      "bed_in_gaps_db": -13.7,
+      "speech_pct": 97.0
+     },
+     {
+      "minute": 18,
+      "voice_db": -16.2,
+      "bed_db": -13.7,
+      "bed_in_gaps_db": -14.8,
+      "speech_pct": 96.8
+     },
+     {
+      "minute": 19,
+      "voice_db": -16.3,
+      "bed_db": -14.3,
+      "bed_in_gaps_db": -15.5,
+      "speech_pct": 97.2
+     },
+     {
+      "minute": 20,
+      "voice_db": -16.2,
+      "bed_db": -13.8,
+      "bed_in_gaps_db": -12.9,
+      "speech_pct": 96.8
+     },
+     {
+      "minute": 21,
+      "voice_db": -16.2,
+      "bed_db": -13.9,
+      "bed_in_gaps_db": -13.0,
+      "speech_pct": 97.2
+     },
+     {
+      "minute": 22,
+      "voice_db": -16.1,
+      "bed_db": -14.0,
+      "bed_in_gaps_db": -13.0,
+      "speech_pct": 98.5
+     },
+     {
+      "minute": 23,
+      "voice_db": -16.4,
+      "bed_db": -14.0,
+      "bed_in_gaps_db": -14.3,
+      "speech_pct": 97.3
+     },
+     {
+      "minute": 24,
+      "voice_db": -16.3,
+      "bed_db": -13.5,
+      "bed_in_gaps_db": -10.9,
+      "speech_pct": 99.2
+     },
+     {
+      "minute": 25,
+      "voice_db": -16.3,
+      "bed_db": -13.7,
+      "bed_in_gaps_db": -16.4,
+      "speech_pct": 99.3
+     },
+     {
+      "minute": 26,
+      "voice_db": -16.2,
+      "bed_db": -14.0,
+      "bed_in_gaps_db": -14.0,
+      "speech_pct": 98.7
+     },
+     {
+      "minute": 27,
+      "voice_db": -16.2,
+      "bed_db": -13.9,
+      "bed_in_gaps_db": -14.1,
+      "speech_pct": 97.7
+     },
+     {
+      "minute": 28,
+      "voice_db": -16.4,
+      "bed_db": -13.5,
+      "bed_in_gaps_db": -14.9,
+      "speech_pct": 98.3
+     },
+     {
+      "minute": 29,
+      "voice_db": -16.3,
+      "bed_db": -13.8,
+      "bed_in_gaps_db": -12.4,
+      "speech_pct": 97.8
+     },
+     {
+      "minute": 30,
+      "voice_db": -16.3,
+      "bed_db": -13.7,
+      "bed_in_gaps_db": -12.6,
+      "speech_pct": 98.5
+     },
+     {
+      "minute": 31,
+      "voice_db": -16.3,
+      "bed_db": -13.9,
+      "bed_in_gaps_db": -12.0,
+      "speech_pct": 97.7
+     },
+     {
+      "minute": 32,
+      "voice_db": -16.5,
+      "bed_db": -13.8,
+      "bed_in_gaps_db": -13.7,
+      "speech_pct": 96.8
+     },
+     {
+      "minute": 33,
+      "voice_db": -16.4,
+      "bed_db": -13.7,
+      "bed_in_gaps_db": -12.6,
+      "speech_pct": 95.7
+     },
+     {
+      "minute": 34,
+      "voice_db": -16.1,
+      "bed_db": -13.5,
+      "bed_in_gaps_db": -12.5,
+      "speech_pct": 97.5
+     },
+     {
+      "minute": 35,
+      "voice_db": -16.6,
+      "bed_db": -13.8,
+      "bed_in_gaps_db": -14.4,
+      "speech_pct": 96.5
+     },
+     {
+      "minute": 36,
+      "voice_db": -16.2,
+      "bed_db": -13.7,
+      "bed_in_gaps_db": -13.8,
+      "speech_pct": 97.7
+     },
+     {
+      "minute": 37,
+      "voice_db": -16.1,
+      "bed_db": -14.0,
+      "bed_in_gaps_db": -13.0,
+      "speech_pct": 94.3
+     },
+     {
+      "minute": 38,
+      "voice_db": -16.5,
+      "bed_db": -15.4,
+      "bed_in_gaps_db": -42.9,
+      "speech_pct": 73.1
+     }
+    ]
+   },
+   "whisper_check": {
+    "available": true,
+    "model": "whisper.cpp ggml-base (int8), 4 threads",
+    "slice_start_s": 698.1,
+    "slice_len_s": 120,
+    "segments": 23,
+    "words": 370,
+    "wpm_whisper": 184.6,
+    "caption_wpm_speaking": 174.1,
+    "delta_wpm": 10.5,
+    "whisper_pause_median_s": null,
+    "whisper_pauses_over_0_35s": 0
+   }
+  },
+  {
+   "video_id": "mS9AO-gSfcM",
+   "title": null,
+   "duration_s": 2293.9,
+   "narration": {
+    "words": 5254,
+    "speech_span_s": 2281.7,
+    "wpm_speaking": 138.2,
+    "wpm_gross": 137.4,
+    "speech_pct_of_runtime": 87.4,
+    "per_minute": [
+     {
+      "minute": 0,
+      "words": 116,
+      "wpm": 116.0
+     },
+     {
+      "minute": 1,
+      "words": 135,
+      "wpm": 135.0
+     },
+     {
+      "minute": 2,
+      "words": 141,
+      "wpm": 141.0
+     },
+     {
+      "minute": 3,
+      "words": 148,
+      "wpm": 148.0
+     },
+     {
+      "minute": 4,
+      "words": 128,
+      "wpm": 128.0
+     },
+     {
+      "minute": 5,
+      "words": 116,
+      "wpm": 116.0
+     },
+     {
+      "minute": 6,
+      "words": 141,
+      "wpm": 141.0
+     },
+     {
+      "minute": 7,
+      "words": 140,
+      "wpm": 140.0
+     },
+     {
+      "minute": 8,
+      "words": 135,
+      "wpm": 135.0
+     },
+     {
+      "minute": 9,
+      "words": 161,
+      "wpm": 161.0
+     },
+     {
+      "minute": 10,
+      "words": 134,
+      "wpm": 134.0
+     },
+     {
+      "minute": 11,
+      "words": 131,
+      "wpm": 131.0
+     },
+     {
+      "minute": 12,
+      "words": 134,
+      "wpm": 134.0
+     },
+     {
+      "minute": 13,
+      "words": 143,
+      "wpm": 143.0
+     },
+     {
+      "minute": 14,
+      "words": 132,
+      "wpm": 132.0
+     },
+     {
+      "minute": 15,
+      "words": 140,
+      "wpm": 140.0
+     },
+     {
+      "minute": 16,
+      "words": 101,
+      "wpm": 101.0
+     },
+     {
+      "minute": 17,
+      "words": 142,
+      "wpm": 142.0
+     },
+     {
+      "minute": 18,
+      "words": 146,
+      "wpm": 146.0
+     },
+     {
+      "minute": 19,
+      "words": 129,
+      "wpm": 129.0
+     },
+     {
+      "minute": 20,
+      "words": 107,
+      "wpm": 107.0
+     },
+     {
+      "minute": 21,
+      "words": 149,
+      "wpm": 149.0
+     },
+     {
+      "minute": 22,
+      "words": 150,
+      "wpm": 150.0
+     },
+     {
+      "minute": 23,
+      "words": 134,
+      "wpm": 134.0
+     },
+     {
+      "minute": 24,
+      "words": 152,
+      "wpm": 152.0
+     },
+     {
+      "minute": 25,
+      "words": 149,
+      "wpm": 149.0
+     },
+     {
+      "minute": 26,
+      "words": 140,
+      "wpm": 140.0
+     },
+     {
+      "minute": 27,
+      "words": 158,
+      "wpm": 158.0
+     },
+     {
+      "minute": 28,
+      "words": 128,
+      "wpm": 128.0
+     },
+     {
+      "minute": 29,
+      "words": 147,
+      "wpm": 147.0
+     },
+     {
+      "minute": 30,
+      "words": 144,
+      "wpm": 144.0
+     },
+     {
+      "minute": 31,
+      "words": 150,
+      "wpm": 150.0
+     },
+     {
+      "minute": 32,
+      "words": 152,
+      "wpm": 152.0
+     },
+     {
+      "minute": 33,
+      "words": 148,
+      "wpm": 148.0
+     },
+     {
+      "minute": 34,
+      "words": 144,
+      "wpm": 144.0
+     },
+     {
+      "minute": 35,
+      "words": 112,
+      "wpm": 112.0
+     },
+     {
+      "minute": 36,
+      "words": 143,
+      "wpm": 143.0
+     },
+     {
+      "minute": 37,
+      "words": 145,
+      "wpm": 145.0
+     },
+     {
+      "minute": 38,
+      "words": 9,
+      "wpm": 39.0
+     }
+    ]
+   },
+   "pauses": {
+    "count": 1146,
+    "median_s": 0.78,
+    "p90_s": 1.14,
+    "max_s": 19.68,
+    "per_minute": 29.98,
+    "histogram": {
+     "0.6-0.8s": 615,
+     "0.8-1.2s": 433,
+     "1.2-2.0s": 75,
+     "2.0-3.0s": 8,
+     "3.0s+": 15
+    },
+    "dramatic_pauses": [
+     {
+      "at": 987.06,
+      "length_s": 19.68,
+      "before": "हैं"
+     },
+     {
+      "at": 2123.34,
+      "length_s": 14.04,
+      "before": "है"
+     },
+     {
+      "at": 8.7,
+      "length_s": 10.26,
+      "before": "है"
+     },
+     {
+      "at": 657.84,
+      "length_s": 8.7,
+      "before": "करते"
+     },
+     {
+      "at": 353.24,
+      "length_s": 6.1,
+      "before": "लैंग्वेज"
+     },
+     {
+      "at": 119.22,
+      "length_s": 5.22,
+      "before": "एथलीसिटी"
+     },
+     {
+      "at": 639.42,
+      "length_s": 5.04,
+      "before": "हैं"
+     },
+     {
+      "at": 1217.22,
+      "length_s": 4.32,
+      "before": "है"
+     },
+     {
+      "at": 68.46,
+      "length_s": 4.02,
+      "before": "है"
+     },
+     {
+      "at": 464.04,
+      "length_s": 4.02,
+      "before": "है"
+     },
+     {
+      "at": 756.24,
+      "length_s": 4.02,
+      "before": "हैं"
+     },
+     {
+      "at": 1142.52,
+      "length_s": 3.96,
+      "before": "हैं"
+     }
+    ],
+    "measurement_note": "True acoustic pauses cannot be isolated here: the music bed fills the voice band, so an energy-based silence detector finds almost nothing. These gaps come from caption word onsets, which cover ~75-90% of the spoken words, so gaps of 0.6-1.0 s are partly caption artefacts. The >=1.5 s list (with timestamps) is the trustworthy part."
+   },
+   "ducking": {
+    "voice_level_db": -17.3,
+    "bed_under_voice_db": -14.9,
+    "bed_in_gaps_db": -15.4,
+    "duck_depth_db": -0.5,
+    "air_under_voice_db": -34.6,
+    "air_in_gaps_db": -35.7,
+    "air_duck_db": -1.1,
+    "bed_onset_delta_db": -0.3,
+    "onsets_measured": 530,
+    "verdict": "no ducking: the bed sits at the same level whether the narrator is speaking or silent (|delta| < 2 dB on both probes)",
+    "bed_loud_threshold_db": -14.1,
+    "loud_music_windows": [
+     {
+      "from_s": 0,
+      "bed_db": -14.1,
+      "to_s": 60,
+      "peak_bed_db": -14.1
+     },
+     {
+      "from_s": 120,
+      "bed_db": -13.9,
+      "to_s": 240,
+      "peak_bed_db": -13.9
+     },
+     {
+      "from_s": 420,
+      "bed_db": -13.9,
+      "to_s": 540,
+      "peak_bed_db": -13.9
+     },
+     {
+      "from_s": 1560,
+      "bed_db": -14.1,
+      "to_s": 1620,
+      "peak_bed_db": -14.1
+     }
+    ],
+    "minute_timeline": [
+     {
+      "minute": 0,
+      "voice_db": -17.4,
+      "bed_db": -14.1,
+      "bed_in_gaps_db": -23.9,
+      "speech_pct": 75.7
+     },
+     {
+      "minute": 1,
+      "voice_db": -17.2,
+      "bed_db": -14.2,
+      "bed_in_gaps_db": -14.9,
+      "speech_pct": 86.0
+     },
+     {
+      "minute": 2,
+      "voice_db": -17.0,
+      "bed_db": -13.9,
+      "bed_in_gaps_db": -14.7,
+      "speech_pct": 88.0
+     },
+     {
+      "minute": 3,
+      "voice_db": -17.3,
+      "bed_db": -13.9,
+      "bed_in_gaps_db": -12.6,
+      "speech_pct": 93.3
+     },
+     {
+      "minute": 4,
+      "voice_db": -17.4,
+      "bed_db": -14.3,
+      "bed_in_gaps_db": -14.2,
+      "speech_pct": 87.7
+     },
+     {
+      "minute": 5,
+      "voice_db": -17.2,
+      "bed_db": -14.6,
+      "bed_in_gaps_db": -17.0,
+      "speech_pct": 79.2
+     },
+     {
+      "minute": 6,
+      "voice_db": -17.2,
+      "bed_db": -14.5,
+      "bed_in_gaps_db": -14.7,
+      "speech_pct": 94.3
+     },
+     {
+      "minute": 7,
+      "voice_db": -17.2,
+      "bed_db": -13.9,
+      "bed_in_gaps_db": -14.4,
+      "speech_pct": 87.7
+     },
+     {
+      "minute": 8,
+      "voice_db": -17.6,
+      "bed_db": -14.1,
+      "bed_in_gaps_db": -13.6,
+      "speech_pct": 88.5
+     },
+     {
+      "minute": 9,
+      "voice_db": -17.1,
+      "bed_db": -15.1,
+      "bed_in_gaps_db": -14.1,
+      "speech_pct": 95.5
+     },
+     {
+      "minute": 10,
+      "voice_db": -17.3,
+      "bed_db": -15.1,
+      "bed_in_gaps_db": -15.5,
+      "speech_pct": 86.5
+     },
+     {
+      "minute": 11,
+      "voice_db": -17.3,
+      "bed_db": -15.6,
+      "bed_in_gaps_db": -21.1,
+      "speech_pct": 83.3
+     },
+     {
+      "minute": 12,
+      "voice_db": -17.1,
+      "bed_db": -14.7,
+      "bed_in_gaps_db": -15.4,
+      "speech_pct": 89.2
+     },
+     {
+      "minute": 13,
+      "voice_db": -17.3,
+      "bed_db": -14.6,
+      "bed_in_gaps_db": -14.2,
+      "speech_pct": 91.7
+     },
+     {
+      "minute": 14,
+      "voice_db": -17.2,
+      "bed_db": -15.5,
+      "bed_in_gaps_db": -16.0,
+      "speech_pct": 87.8
+     },
+     {
+      "minute": 15,
+      "voice_db": -17.2,
+      "bed_db": -14.6,
+      "bed_in_gaps_db": -14.0,
+      "speech_pct": 89.2
+     },
+     {
+      "minute": 16,
+      "voice_db": -17.4,
+      "bed_db": -15.7,
+      "bed_in_gaps_db": -23.0,
+      "speech_pct": 61.8
+     },
+     {
+      "minute": 17,
+      "voice_db": -17.6,
+      "bed_db": -14.7,
+      "bed_in_gaps_db": -15.0,
+      "speech_pct": 87.5
+     },
+     {
+      "minute": 18,
+      "voice_db": -16.9,
+      "bed_db": -14.6,
+      "bed_in_gaps_db": -14.3,
+      "speech_pct": 91.7
+     },
+     {
+      "minute": 19,
+      "voice_db": -17.5,
+      "bed_db": -15.5,
+      "bed_in_gaps_db": -15.3,
+      "speech_pct": 81.3
+     },
+     {
+      "minute": 20,
+      "voice_db": -16.9,
+      "bed_db": -17.0,
+      "bed_in_gaps_db": -16.9,
+      "speech_pct": 75.8
+     },
+     {
+      "minute": 21,
+      "voice_db": -17.3,
+      "bed_db": -14.6,
+      "bed_in_gaps_db": -14.4,
+      "speech_pct": 91.7
+     },
+     {
+      "minute": 22,
+      "voice_db": -17.1,
+      "bed_db": -15.1,
+      "bed_in_gaps_db": -14.6,
+      "speech_pct": 94.8
+     },
+     {
+      "minute": 23,
+      "voice_db": -17.5,
+      "bed_db": -15.1,
+      "bed_in_gaps_db": -14.0,
+      "speech_pct": 89.5
+     },
+     {
+      "minute": 24,
+      "voice_db": -17.2,
+      "bed_db": -15.1,
+      "bed_in_gaps_db": -14.3,
+      "speech_pct": 92.2
+     },
+     {
+      "minute": 25,
+      "voice_db": -17.5,
+      "bed_db": -15.4,
+      "bed_in_gaps_db": -14.4,
+      "speech_pct": 93.0
+     },
+     {
+      "minute": 26,
+      "voice_db": -17.2,
+      "bed_db": -14.1,
+      "bed_in_gaps_db": -13.2,
+      "speech_pct": 90.3
+     },
+     {
+      "minute": 27,
+      "voice_db": -17.7,
+      "bed_db": -15.2,
+      "bed_in_gaps_db": -14.0,
+      "speech_pct": 94.8
+     },
+     {
+      "minute": 28,
+      "voice_db": -17.5,
+      "bed_db": -14.6,
+      "bed_in_gaps_db": -13.5,
+      "speech_pct": 83.7
+     },
+     {
+      "minute": 29,
+      "voice_db": -17.2,
+      "bed_db": -15.1,
+      "bed_in_gaps_db": -13.6,
+      "speech_pct": 91.5
+     },
+     {
+      "minute": 30,
+      "voice_db": -17.3,
+      "bed_db": -15.3,
+      "bed_in_gaps_db": -15.7,
+      "speech_pct": 90.5
+     },
+     {
+      "minute": 31,
+      "voice_db": -17.3,
+      "bed_db": -15.0,
+      "bed_in_gaps_db": -14.0,
+      "speech_pct": 93.7
+     },
+     {
+      "minute": 32,
+      "voice_db": -17.5,
+      "bed_db": -15.7,
+      "bed_in_gaps_db": -15.4,
+      "speech_pct": 92.3
+     },
+     {
+      "minute": 33,
+      "voice_db": -17.4,
+      "bed_db": -15.3,
+      "bed_in_gaps_db": -14.8,
+      "speech_pct": 93.3
+     },
+     {
+      "minute": 34,
+      "voice_db": -17.7,
+      "bed_db": -14.6,
+      "bed_in_gaps_db": -14.5,
+      "speech_pct": 93.5
+     },
+     {
+      "minute": 35,
+      "voice_db": -17.0,
+      "bed_db": -15.9,
+      "bed_in_gaps_db": -19.9,
+      "speech_pct": 72.2
+     },
+     {
+      "minute": 36,
+      "voice_db": -18.0,
+      "bed_db": -15.5,
+      "bed_in_gaps_db": -13.6,
+      "speech_pct": 88.8
+     },
+     {
+      "minute": 37,
+      "voice_db": -17.9,
+      "bed_db": -15.5,
+      "bed_in_gaps_db": -15.0,
+      "speech_pct": 88.3
+     },
+     {
+      "minute": 38,
+      "voice_db": -18.1,
+      "bed_db": -19.3,
+      "bed_in_gaps_db": -19.7,
+      "speech_pct": 23.2
+     }
+    ]
+   },
+   "whisper_check": {
+    "available": true,
+    "model": "whisper.cpp ggml-base (int8), 4 threads",
+    "slice_start_s": 688.2,
+    "slice_len_s": 120,
+    "segments": 16,
+    "words": 326,
+    "wpm_whisper": 162.8,
+    "caption_wpm_speaking": 138.2,
+    "delta_wpm": 24.6,
+    "whisper_pause_median_s": 3.16,
+    "whisper_pauses_over_0_35s": 1
+   }
+  },
+  {
+   "video_id": "UDCSmo77FMA",
+   "title": null,
+   "duration_s": 1554.8,
+   "narration": {
+    "words": 4262,
+    "speech_span_s": 1542.1,
+    "wpm_speaking": 165.8,
+    "wpm_gross": 164.5,
+    "speech_pct_of_runtime": 95.4,
+    "per_minute": [
+     {
+      "minute": 0,
+      "words": 175,
+      "wpm": 175.0
+     },
+     {
+      "minute": 1,
+      "words": 139,
+      "wpm": 139.0
+     },
+     {
+      "minute": 2,
+      "words": 166,
+      "wpm": 166.0
+     },
+     {
+      "minute": 3,
+      "words": 181,
+      "wpm": 181.0
+     },
+     {
+      "minute": 4,
+      "words": 170,
+      "wpm": 170.0
+     },
+     {
+      "minute": 5,
+      "words": 167,
+      "wpm": 167.0
+     },
+     {
+      "minute": 6,
+      "words": 165,
+      "wpm": 165.0
+     },
+     {
+      "minute": 7,
+      "words": 179,
+      "wpm": 179.0
+     },
+     {
+      "minute": 8,
+      "words": 161,
+      "wpm": 161.0
+     },
+     {
+      "minute": 9,
+      "words": 168,
+      "wpm": 168.0
+     },
+     {
+      "minute": 10,
+      "words": 159,
+      "wpm": 159.0
+     },
+     {
+      "minute": 11,
+      "words": 159,
+      "wpm": 159.0
+     },
+     {
+      "minute": 12,
+      "words": 162,
+      "wpm": 162.0
+     },
+     {
+      "minute": 13,
+      "words": 162,
+      "wpm": 162.0
+     },
+     {
+      "minute": 14,
+      "words": 169,
+      "wpm": 169.0
+     },
+     {
+      "minute": 15,
+      "words": 163,
+      "wpm": 163.0
+     },
+     {
+      "minute": 16,
+      "words": 167,
+      "wpm": 167.0
+     },
+     {
+      "minute": 17,
+      "words": 149,
+      "wpm": 149.0
+     },
+     {
+      "minute": 18,
+      "words": 168,
+      "wpm": 168.0
+     },
+     {
+      "minute": 19,
+      "words": 171,
+      "wpm": 171.0
+     },
+     {
+      "minute": 20,
+      "words": 173,
+      "wpm": 173.0
+     },
+     {
+      "minute": 21,
+      "words": 160,
+      "wpm": 160.0
+     },
+     {
+      "minute": 22,
+      "words": 166,
+      "wpm": 166.0
+     },
+     {
+      "minute": 23,
+      "words": 171,
+      "wpm": 171.0
+     },
+     {
+      "minute": 24,
+      "words": 174,
+      "wpm": 174.0
+     },
+     {
+      "minute": 25,
+      "words": 118,
+      "wpm": 129.2
+     }
+    ]
+   },
+   "pauses": {
+    "count": 459,
+    "median_s": 0.72,
+    "p90_s": 1.04,
+    "max_s": 4.64,
+    "per_minute": 17.71,
+    "histogram": {
+     "0.6-0.8s": 268,
+     "0.8-1.2s": 173,
+     "1.2-2.0s": 13,
+     "2.0-3.0s": 0,
+     "3.0s+": 5
+    },
+    "dramatic_pauses": [
+     {
+      "at": 116.88,
+      "length_s": 4.64,
+      "before": "गॉडफादर"
+     },
+     {
+      "at": 1068.24,
+      "length_s": 4.08,
+      "before": "हैं।"
+     },
+     {
+      "at": 502.64,
+      "length_s": 3.92,
+      "before": "गया।"
+     },
+     {
+      "at": 884.32,
+      "length_s": 3.6,
+      "before": "बदल"
+     },
+     {
+      "at": 1324.48,
+      "length_s": 3.6,
+      "before": "हुआ"
+     }
+    ],
+    "measurement_note": "True acoustic pauses cannot be isolated here: the music bed fills the voice band, so an energy-based silence detector finds almost nothing. These gaps come from caption word onsets, which cover ~75-90% of the spoken words, so gaps of 0.6-1.0 s are partly caption artefacts. The >=1.5 s list (with timestamps) is the trustworthy part."
+   },
+   "ducking": {
+    "voice_level_db": -15.6,
+    "bed_under_voice_db": -13.9,
+    "bed_in_gaps_db": -14.1,
+    "duck_depth_db": -0.2,
+    "air_under_voice_db": -34.4,
+    "air_in_gaps_db": -35.5,
+    "air_duck_db": -1.1,
+    "bed_onset_delta_db": -0.2,
+    "onsets_measured": 152,
+    "verdict": "no ducking: the bed sits at the same level whether the narrator is speaking or silent (|delta| < 2 dB on both probes)",
+    "bed_loud_threshold_db": -13.6,
+    "loud_music_windows": [
+     {
+      "from_s": 1200,
+      "bed_db": -13.6,
+      "to_s": 1260,
+      "peak_bed_db": -13.6
+     },
+     {
+      "from_s": 1320,
+      "bed_db": -13.4,
+      "to_s": 1500,
+      "peak_bed_db": -13.4
+     }
+    ],
+    "minute_timeline": [
+     {
+      "minute": 0,
+      "voice_db": -15.4,
+      "bed_db": -13.8,
+      "bed_in_gaps_db": -14.8,
+      "speech_pct": 96.5
+     },
+     {
+      "minute": 1,
+      "voice_db": -15.8,
+      "bed_db": -15.8,
+      "bed_in_gaps_db": -24.9,
+      "speech_pct": 92.2
+     },
+     {
+      "minute": 2,
+      "voice_db": -15.6,
+      "bed_db": -13.9,
+      "bed_in_gaps_db": -14.9,
+      "speech_pct": 92.7
+     },
+     {
+      "minute": 3,
+      "voice_db": -15.7,
+      "bed_db": -13.8,
+      "bed_in_gaps_db": -14.0,
+      "speech_pct": 98.2
+     },
+     {
+      "minute": 4,
+      "voice_db": -15.5,
+      "bed_db": -14.0,
+      "bed_in_gaps_db": -14.6,
+      "speech_pct": 97.8
+     },
+     {
+      "minute": 5,
+      "voice_db": -15.5,
+      "bed_db": -14.2,
+      "bed_in_gaps_db": -13.8,
+      "speech_pct": 96.8
+     },
+     {
+      "minute": 6,
+      "voice_db": -15.6,
+      "bed_db": -14.0,
+      "bed_in_gaps_db": -14.3,
+      "speech_pct": 97.7
+     },
+     {
+      "minute": 7,
+      "voice_db": -15.6,
+      "bed_db": -13.9,
+      "bed_in_gaps_db": -11.2,
+      "speech_pct": 99.3
+     },
+     {
+      "minute": 8,
+      "voice_db": -15.5,
+      "bed_db": -14.0,
+      "bed_in_gaps_db": -16.4,
+      "speech_pct": 93.5
+     },
+     {
+      "minute": 9,
+      "voice_db": -15.6,
+      "bed_db": -14.1,
+      "bed_in_gaps_db": -14.3,
+      "speech_pct": 97.3
+     },
+     {
+      "minute": 10,
+      "voice_db": -15.8,
+      "bed_db": -13.8,
+      "bed_in_gaps_db": -12.6,
+      "speech_pct": 95.2
+     },
+     {
+      "minute": 11,
+      "voice_db": -15.7,
+      "bed_db": -14.2,
+      "bed_in_gaps_db": -13.6,
+      "speech_pct": 96.0
+     },
+     {
+      "minute": 12,
+      "voice_db": -15.3,
+      "bed_db": -13.8,
+      "bed_in_gaps_db": -14.7,
+      "speech_pct": 97.0
+     },
+     {
+      "minute": 13,
+      "voice_db": -15.6,
+      "bed_db": -13.7,
+      "bed_in_gaps_db": -14.6,
+      "speech_pct": 97.3
+     },
+     {
+      "minute": 14,
+      "voice_db": -15.7,
+      "bed_db": -13.8,
+      "bed_in_gaps_db": -17.1,
+      "speech_pct": 94.0
+     },
+     {
+      "minute": 15,
+      "voice_db": -15.8,
+      "bed_db": -14.0,
+      "bed_in_gaps_db": -12.6,
+      "speech_pct": 97.0
+     },
+     {
+      "minute": 16,
+      "voice_db": -15.7,
+      "bed_db": -14.0,
+      "bed_in_gaps_db": -13.3,
+      "speech_pct": 97.2
+     },
+     {
+      "minute": 17,
+      "voice_db": -16.1,
+      "bed_db": -14.0,
+      "bed_in_gaps_db": -14.9,
+      "speech_pct": 91.8
+     },
+     {
+      "minute": 18,
+      "voice_db": -15.5,
+      "bed_db": -14.2,
+      "bed_in_gaps_db": -14.6,
+      "speech_pct": 97.5
+     },
+     {
+      "minute": 19,
+      "voice_db": -15.5,
+      "bed_db": -13.8,
+      "bed_in_gaps_db": -14.2,
+      "speech_pct": 98.3
+     },
+     {
+      "minute": 20,
+      "voice_db": -15.7,
+      "bed_db": -13.6,
+      "bed_in_gaps_db": -13.0,
+      "speech_pct": 96.3
+     },
+     {
+      "minute": 21,
+      "voice_db": -15.8,
+      "bed_db": -13.7,
+      "bed_in_gaps_db": -13.4,
+      "speech_pct": 95.3
+     },
+     {
+      "minute": 22,
+      "voice_db": -15.5,
+      "bed_db": -13.4,
+      "bed_in_gaps_db": -16.1,
+      "speech_pct": 93.3
+     },
+     {
+      "minute": 23,
+      "voice_db": -15.8,
+      "bed_db": -13.6,
+      "bed_in_gaps_db": -14.4,
+      "speech_pct": 96.0
+     },
+     {
+      "minute": 24,
+      "voice_db": -15.8,
+      "bed_db": -13.6,
+      "bed_in_gaps_db": -13.8,
+      "speech_pct": 97.3
+     },
+     {
+      "minute": 25,
+      "voice_db": -15.4,
+      "bed_db": -14.8,
+      "bed_in_gaps_db": -34.7,
+      "speech_pct": 76.3
+     }
+    ]
+   },
+   "whisper_check": {
+    "available": true,
+    "model": "whisper.cpp ggml-base (int8), 4 threads",
+    "slice_start_s": 466.4,
+    "slice_len_s": 120,
+    "segments": 31,
+    "words": 389,
+    "wpm_whisper": 194.5,
+    "caption_wpm_speaking": 165.8,
+    "delta_wpm": 28.7,
+    "whisper_pause_median_s": 4.55,
+    "whisper_pauses_over_0_35s": 2
+   }
+  },
+  {
+   "video_id": "KhSFC1GNgNM",
+   "title": null,
+   "duration_s": 1638.9,
+   "narration": {
+    "words": 4458,
+    "speech_span_s": 1625.8,
+    "wpm_speaking": 164.5,
+    "wpm_gross": 163.2,
+    "speech_pct_of_runtime": 93.1,
+    "per_minute": [
+     {
+      "minute": 0,
+      "words": 160,
+      "wpm": 160.0
+     },
+     {
+      "minute": 1,
+      "words": 164,
+      "wpm": 164.0
+     },
+     {
+      "minute": 2,
+      "words": 178,
+      "wpm": 178.0
+     },
+     {
+      "minute": 3,
+      "words": 176,
+      "wpm": 176.0
+     },
+     {
+      "minute": 4,
+      "words": 175,
+      "wpm": 175.0
+     },
+     {
+      "minute": 5,
+      "words": 159,
+      "wpm": 159.0
+     },
+     {
+      "minute": 6,
+      "words": 141,
+      "wpm": 141.0
+     },
+     {
+      "minute": 7,
+      "words": 151,
+      "wpm": 151.0
+     },
+     {
+      "minute": 8,
+      "words": 183,
+      "wpm": 183.0
+     },
+     {
+      "minute": 9,
+      "words": 180,
+      "wpm": 180.0
+     },
+     {
+      "minute": 10,
+      "words": 176,
+      "wpm": 176.0
+     },
+     {
+      "minute": 11,
+      "words": 110,
+      "wpm": 110.0
+     },
+     {
+      "minute": 12,
+      "words": 167,
+      "wpm": 167.0
+     },
+     {
+      "minute": 13,
+      "words": 184,
+      "wpm": 184.0
+     },
+     {
+      "minute": 14,
+      "words": 181,
+      "wpm": 181.0
+     },
+     {
+      "minute": 15,
+      "words": 168,
+      "wpm": 168.0
+     },
+     {
+      "minute": 16,
+      "words": 170,
+      "wpm": 170.0
+     },
+     {
+      "minute": 17,
+      "words": 158,
+      "wpm": 158.0
+     },
+     {
+      "minute": 18,
+      "words": 155,
+      "wpm": 155.0
+     },
+     {
+      "minute": 19,
+      "words": 172,
+      "wpm": 172.0
+     },
+     {
+      "minute": 20,
+      "words": 183,
+      "wpm": 183.0
+     },
+     {
+      "minute": 21,
+      "words": 133,
+      "wpm": 133.0
+     },
+     {
+      "minute": 22,
+      "words": 149,
+      "wpm": 149.0
+     },
+     {
+      "minute": 23,
+      "words": 166,
+      "wpm": 166.0
+     },
+     {
+      "minute": 24,
+      "words": 170,
+      "wpm": 170.0
+     },
+     {
+      "minute": 25,
+      "words": 170,
+      "wpm": 170.0
+     },
+     {
+      "minute": 26,
+      "words": 161,
+      "wpm": 161.0
+     },
+     {
+      "minute": 27,
+      "words": 18,
+      "wpm": 57.1
+     }
+    ]
+   },
+   "pauses": {
+    "count": 486,
+    "median_s": 0.72,
+    "p90_s": 1.0,
+    "max_s": 20.32,
+    "per_minute": 17.79,
+    "histogram": {
+     "0.6-0.8s": 286,
+     "0.8-1.2s": 181,
+     "1.2-2.0s": 13,
+     "2.0-3.0s": 2,
+     "3.0s+": 4
+    },
+    "dramatic_pauses": [
+     {
+      "at": 669.12,
+      "length_s": 20.32,
+      "before": "वही"
+     },
+     {
+      "at": 1303.36,
+      "length_s": 15.2,
+      "before": "कर"
+     },
+     {
+      "at": 471.64,
+      "length_s": 8.32,
+      "before": "लावारिस"
+     },
+     {
+      "at": 406.36,
+      "length_s": 6.64,
+      "before": "हो"
+     },
+     {
+      "at": 1586.08,
+      "length_s": 2.56,
+      "before": "था"
+     },
+     {
+      "at": 146.76,
+      "length_s": 2.08,
+      "before": "दोपहर"
+     },
+     {
+      "at": 380.16,
+      "length_s": 1.88,
+      "before": "गई"
+     },
+     {
+      "at": 1344.56,
+      "length_s": 1.68,
+      "before": "एक्सप्लोजिव्स"
+     },
+     {
+      "at": 202.52,
+      "length_s": 1.56,
+      "before": "227"
+     }
+    ],
+    "measurement_note": "True acoustic pauses cannot be isolated here: the music bed fills the voice band, so an energy-based silence detector finds almost nothing. These gaps come from caption word onsets, which cover ~75-90% of the spoken words, so gaps of 0.6-1.0 s are partly caption artefacts. The >=1.5 s list (with timestamps) is the trustworthy part."
+   },
+   "ducking": {
+    "voice_level_db": -15.9,
+    "bed_under_voice_db": -14.3,
+    "bed_in_gaps_db": -14.4,
+    "duck_depth_db": -0.1,
+    "air_under_voice_db": -34.5,
+    "air_in_gaps_db": -34.7,
+    "air_duck_db": -0.2,
+    "bed_onset_delta_db": 0.2,
+    "onsets_measured": 176,
+    "verdict": "no ducking: the bed sits at the same level whether the narrator is speaking or silent (|delta| < 2 dB on both probes)",
+    "bed_loud_threshold_db": -13.9,
+    "loud_music_windows": [
+     {
+      "from_s": 60,
+      "bed_db": -13.9,
+      "to_s": 120,
+      "peak_bed_db": -13.9
+     },
+     {
+      "from_s": 660,
+      "bed_db": -13.9,
+      "to_s": 720,
+      "peak_bed_db": -13.9
+     },
+     {
+      "from_s": 960,
+      "bed_db": -13.6,
+      "to_s": 1020,
+      "peak_bed_db": -13.6
+     },
+     {
+      "from_s": 1260,
+      "bed_db": -13.9,
+      "to_s": 1380,
+      "peak_bed_db": -13.9
+     },
+     {
+      "from_s": 1560,
+      "bed_db": -13.9,
+      "to_s": 1620,
+      "peak_bed_db": -13.9
+     }
+    ],
+    "minute_timeline": [
+     {
+      "minute": 0,
+      "voice_db": -16.3,
+      "bed_db": -14.6,
+      "bed_in_gaps_db": -15.9,
+      "speech_pct": 93.8
+     },
+     {
+      "minute": 1,
+      "voice_db": -15.9,
+      "bed_db": -13.9,
+      "bed_in_gaps_db": -15.4,
+      "speech_pct": 97.7
+     },
+     {
+      "minute": 2,
+      "voice_db": -15.8,
+      "bed_db": -14.4,
+      "bed_in_gaps_db": -15.0,
+      "speech_pct": 95.8
+     },
+     {
+      "minute": 3,
+      "voice_db": -15.9,
+      "bed_db": -14.3,
+      "bed_in_gaps_db": -15.2,
+      "speech_pct": 97.3
+     },
+     {
+      "minute": 4,
+      "voice_db": -16.1,
+      "bed_db": -14.3,
+      "bed_in_gaps_db": -14.8,
+      "speech_pct": 98.5
+     },
+     {
+      "minute": 5,
+      "voice_db": -16.3,
+      "bed_db": -14.7,
+      "bed_in_gaps_db": -14.7,
+      "speech_pct": 96.2
+     },
+     {
+      "minute": 6,
+      "voice_db": -17.6,
+      "bed_db": -19.1,
+      "bed_in_gaps_db": -25.2,
+      "speech_pct": 84.3
+     },
+     {
+      "minute": 7,
+      "voice_db": -16.1,
+      "bed_db": -14.6,
+      "bed_in_gaps_db": -14.3,
+      "speech_pct": 85.0
+     },
+     {
+      "minute": 8,
+      "voice_db": -15.6,
+      "bed_db": -14.1,
+      "bed_in_gaps_db": -12.6,
+      "speech_pct": 98.0
+     },
+     {
+      "minute": 9,
+      "voice_db": -15.7,
+      "bed_db": -14.7,
+      "bed_in_gaps_db": -13.4,
+      "speech_pct": 97.7
+     },
+     {
+      "minute": 10,
+      "voice_db": -15.7,
+      "bed_db": -14.8,
+      "bed_in_gaps_db": -15.7,
+      "speech_pct": 98.0
+     },
+     {
+      "minute": 11,
+      "voice_db": -16.0,
+      "bed_db": -13.9,
+      "bed_in_gaps_db": -14.0,
+      "speech_pct": 64.2
+     },
+     {
+      "minute": 12,
+      "voice_db": -15.9,
+      "bed_db": -14.5,
+      "bed_in_gaps_db": -15.0,
+      "speech_pct": 95.7
+     },
+     {
+      "minute": 13,
+      "voice_db": -16.0,
+      "bed_db": -14.2,
+      "bed_in_gaps_db": -15.3,
+      "speech_pct": 98.3
+     },
+     {
+      "minute": 14,
+      "voice_db": -16.1,
+      "bed_db": -14.4,
+      "bed_in_gaps_db": -15.4,
+      "speech_pct": 99.3
+     },
+     {
+      "minute": 15,
+      "voice_db": -16.0,
+      "bed_db": -14.2,
+      "bed_in_gaps_db": -13.5,
+      "speech_pct": 96.8
+     },
+     {
+      "minute": 16,
+      "voice_db": -15.7,
+      "bed_db": -13.6,
+      "bed_in_gaps_db": -13.3,
+      "speech_pct": 98.0
+     },
+     {
+      "minute": 17,
+      "voice_db": -15.8,
+      "bed_db": -14.2,
+      "bed_in_gaps_db": -13.7,
+      "speech_pct": 95.2
+     },
+     {
+      "minute": 18,
+      "voice_db": -16.0,
+      "bed_db": -14.1,
+      "bed_in_gaps_db": -14.0,
+      "speech_pct": 95.7
+     },
+     {
+      "minute": 19,
+      "voice_db": -15.6,
+      "bed_db": -14.1,
+      "bed_in_gaps_db": -14.5,
+      "speech_pct": 97.2
+     },
+     {
+      "minute": 20,
+      "voice_db": -15.9,
+      "bed_db": -14.1,
+      "bed_in_gaps_db": -14.3,
+      "speech_pct": 98.2
+     },
+     {
+      "minute": 21,
+      "voice_db": -15.8,
+      "bed_db": -13.9,
+      "bed_in_gaps_db": -14.2,
+      "speech_pct": 74.2
+     },
+     {
+      "minute": 22,
+      "voice_db": -16.1,
+      "bed_db": -13.9,
+      "bed_in_gaps_db": -13.4,
+      "speech_pct": 93.2
+     },
+     {
+      "minute": 23,
+      "voice_db": -15.8,
+      "bed_db": -14.1,
+      "bed_in_gaps_db": -15.1,
+      "speech_pct": 95.3
+     },
+     {
+      "minute": 24,
+      "voice_db": -15.8,
+      "bed_db": -14.1,
+      "bed_in_gaps_db": -13.3,
+      "speech_pct": 97.7
+     },
+     {
+      "minute": 25,
+      "voice_db": -15.9,
+      "bed_db": -14.3,
+      "bed_in_gaps_db": -12.9,
+      "speech_pct": 98.5
+     },
+     {
+      "minute": 26,
+      "voice_db": -16.0,
+      "bed_db": -13.9,
+      "bed_in_gaps_db": -14.0,
+      "speech_pct": 92.7
+     },
+     {
+      "minute": 27,
+      "voice_db": -16.2,
+      "bed_db": -30.3,
+      "bed_in_gaps_db": -32.1,
+      "speech_pct": 33.9
+     }
+    ]
+   },
+   "whisper_check": {
+    "available": true,
+    "model": "whisper.cpp ggml-base (int8), 4 threads",
+    "slice_start_s": 491.7,
+    "slice_len_s": 120,
+    "segments": 26,
+    "words": 404,
+    "wpm_whisper": 161.9,
+    "caption_wpm_speaking": 164.5,
+    "delta_wpm": -2.6,
+    "whisper_pause_median_s": null,
+    "whisper_pauses_over_0_35s": 0
+   }
+  },
+  {
+   "video_id": "-DVr8iA-1F0",
+   "title": null,
+   "duration_s": 1667.5,
+   "narration": {
+    "words": 4500,
+    "speech_span_s": 1655.0,
+    "wpm_speaking": 163.1,
+    "wpm_gross": 161.9,
+    "speech_pct_of_runtime": 95.4,
+    "per_minute": [
+     {
+      "minute": 0,
+      "words": 160,
+      "wpm": 160.0
+     },
+     {
+      "minute": 1,
+      "words": 161,
+      "wpm": 161.0
+     },
+     {
+      "minute": 2,
+      "words": 143,
+      "wpm": 143.0
+     },
+     {
+      "minute": 3,
+      "words": 171,
+      "wpm": 171.0
+     },
+     {
+      "minute": 4,
+      "words": 165,
+      "wpm": 165.0
+     },
+     {
+      "minute": 5,
+      "words": 138,
+      "wpm": 138.0
+     },
+     {
+      "minute": 6,
+      "words": 159,
+      "wpm": 159.0
+     },
+     {
+      "minute": 7,
+      "words": 153,
+      "wpm": 153.0
+     },
+     {
+      "minute": 8,
+      "words": 167,
+      "wpm": 167.0
+     },
+     {
+      "minute": 9,
+      "words": 159,
+      "wpm": 159.0
+     },
+     {
+      "minute": 10,
+      "words": 158,
+      "wpm": 158.0
+     },
+     {
+      "minute": 11,
+      "words": 156,
+      "wpm": 156.0
+     },
+     {
+      "minute": 12,
+      "words": 166,
+      "wpm": 166.0
+     },
+     {
+      "minute": 13,
+      "words": 170,
+      "wpm": 170.0
+     },
+     {
+      "minute": 14,
+      "words": 169,
+      "wpm": 169.0
+     },
+     {
+      "minute": 15,
+      "words": 157,
+      "wpm": 157.0
+     },
+     {
+      "minute": 16,
+      "words": 167,
+      "wpm": 167.0
+     },
+     {
+      "minute": 17,
+      "words": 172,
+      "wpm": 172.0
+     },
+     {
+      "minute": 18,
+      "words": 173,
+      "wpm": 173.0
+     },
+     {
+      "minute": 19,
+      "words": 173,
+      "wpm": 173.0
+     },
+     {
+      "minute": 20,
+      "words": 177,
+      "wpm": 177.0
+     },
+     {
+      "minute": 21,
+      "words": 160,
+      "wpm": 160.0
+     },
+     {
+      "minute": 22,
+      "words": 173,
+      "wpm": 173.0
+     },
+     {
+      "minute": 23,
+      "words": 162,
+      "wpm": 162.0
+     },
+     {
+      "minute": 24,
+      "words": 163,
+      "wpm": 163.0
+     },
+     {
+      "minute": 25,
+      "words": 169,
+      "wpm": 169.0
+     },
+     {
+      "minute": 26,
+      "words": 162,
+      "wpm": 162.0
+     },
+     {
+      "minute": 27,
+      "words": 97,
+      "wpm": 122.6
+     }
+    ]
+   },
+   "pauses": {
+    "count": 578,
+    "median_s": 0.72,
+    "p90_s": 0.96,
+    "max_s": 7.88,
+    "per_minute": 20.8,
+    "histogram": {
+     "0.6-0.8s": 370,
+     "0.8-1.2s": 189,
+     "1.2-2.0s": 16,
+     "2.0-3.0s": 1,
+     "3.0s+": 2
+    },
+    "dramatic_pauses": [
+     {
+      "at": 308.32,
+      "length_s": 7.88,
+      "before": "रथसप्तमी"
+     },
+     {
+      "at": 144.76,
+      "length_s": 4.36,
+      "before": "मेक्सिको"
+     },
+     {
+      "at": 154.2,
+      "length_s": 2.04,
+      "before": "लुक"
+     },
+     {
+      "at": 355.64,
+      "length_s": 1.56,
+      "before": "एडमिनिस्ट्रेशन"
+     }
+    ],
+    "measurement_note": "True acoustic pauses cannot be isolated here: the music bed fills the voice band, so an energy-based silence detector finds almost nothing. These gaps come from caption word onsets, which cover ~75-90% of the spoken words, so gaps of 0.6-1.0 s are partly caption artefacts. The >=1.5 s list (with timestamps) is the trustworthy part."
+   },
+   "ducking": {
+    "voice_level_db": -15.9,
+    "bed_under_voice_db": -14.5,
+    "bed_in_gaps_db": -15.0,
+    "duck_depth_db": -0.5,
+    "air_under_voice_db": -32.3,
+    "air_in_gaps_db": -32.9,
+    "air_duck_db": -0.6,
+    "bed_onset_delta_db": 0.6,
+    "onsets_measured": 177,
+    "verdict": "no ducking: the bed sits at the same level whether the narrator is speaking or silent (|delta| < 2 dB on both probes)",
+    "bed_loud_threshold_db": -14.3,
+    "loud_music_windows": [
+     {
+      "from_s": 0,
+      "bed_db": -14.2,
+      "to_s": 60,
+      "peak_bed_db": -14.2
+     },
+     {
+      "from_s": 360,
+      "bed_db": -14.2,
+      "to_s": 420,
+      "peak_bed_db": -14.2
+     },
+     {
+      "from_s": 1500,
+      "bed_db": -13.9,
+      "to_s": 1560,
+      "peak_bed_db": -13.9
+     }
+    ],
+    "minute_timeline": [
+     {
+      "minute": 0,
+      "voice_db": -16.0,
+      "bed_db": -14.2,
+      "bed_in_gaps_db": -14.0,
+      "speech_pct": 96.5
+     },
+     {
+      "minute": 1,
+      "voice_db": -16.1,
+      "bed_db": -14.5,
+      "bed_in_gaps_db": -15.4,
+      "speech_pct": 98.2
+     },
+     {
+      "minute": 2,
+      "voice_db": -17.7,
+      "bed_db": -18.1,
+      "bed_in_gaps_db": -24.3,
+      "speech_pct": 86.8
+     },
+     {
+      "minute": 3,
+      "voice_db": -15.9,
+      "bed_db": -14.8,
+      "bed_in_gaps_db": -17.7,
+      "speech_pct": 98.5
+     },
+     {
+      "minute": 4,
+      "voice_db": -15.9,
+      "bed_db": -14.4,
+      "bed_in_gaps_db": -13.3,
+      "speech_pct": 97.8
+     },
+     {
+      "minute": 5,
+      "voice_db": -15.9,
+      "bed_db": -14.8,
+      "bed_in_gaps_db": -14.3,
+      "speech_pct": 83.5
+     },
+     {
+      "minute": 6,
+      "voice_db": -15.6,
+      "bed_db": -14.2,
+      "bed_in_gaps_db": -15.2,
+      "speech_pct": 94.7
+     },
+     {
+      "minute": 7,
+      "voice_db": -16.0,
+      "bed_db": -14.4,
+      "bed_in_gaps_db": -14.6,
+      "speech_pct": 96.8
+     },
+     {
+      "minute": 8,
+      "voice_db": -15.7,
+      "bed_db": -14.9,
+      "bed_in_gaps_db": -14.9,
+      "speech_pct": 96.3
+     },
+     {
+      "minute": 9,
+      "voice_db": -15.9,
+      "bed_db": -14.3,
+      "bed_in_gaps_db": -14.6,
+      "speech_pct": 94.0
+     },
+     {
+      "minute": 10,
+      "voice_db": -15.9,
+      "bed_db": -15.2,
+      "bed_in_gaps_db": -14.3,
+      "speech_pct": 96.2
+     },
+     {
+      "minute": 11,
+      "voice_db": -16.0,
+      "bed_db": -14.5,
+      "bed_in_gaps_db": -15.2,
+      "speech_pct": 96.8
+     },
+     {
+      "minute": 12,
+      "voice_db": -15.9,
+      "bed_db": -14.3,
+      "bed_in_gaps_db": -15.5,
+      "speech_pct": 97.7
+     },
+     {
+      "minute": 13,
+      "voice_db": -15.7,
+      "bed_db": -14.4,
+      "bed_in_gaps_db": -14.4,
+      "speech_pct": 96.8
+     },
+     {
+      "minute": 14,
+      "voice_db": -15.8,
+      "bed_db": -14.5,
+      "bed_in_gaps_db": -14.1,
+      "speech_pct": 97.5
+     },
+     {
+      "minute": 15,
+      "voice_db": -15.8,
+      "bed_db": -14.6,
+      "bed_in_gaps_db": -14.1,
+      "speech_pct": 95.0
+     },
+     {
+      "minute": 16,
+      "voice_db": -15.7,
+      "bed_db": -14.4,
+      "bed_in_gaps_db": -13.6,
+      "speech_pct": 97.5
+     },
+     {
+      "minute": 17,
+      "voice_db": -16.0,
+      "bed_db": -14.5,
+      "bed_in_gaps_db": -12.6,
+      "speech_pct": 98.2
+     },
+     {
+      "minute": 18,
+      "voice_db": -15.9,
+      "bed_db": -14.3,
+      "bed_in_gaps_db": -13.0,
+      "speech_pct": 97.3
+     },
+     {
+      "minute": 19,
+      "voice_db": -16.0,
+      "bed_db": -14.6,
+      "bed_in_gaps_db": -14.3,
+      "speech_pct": 96.7
+     },
+     {
+      "minute": 20,
+      "voice_db": -16.0,
+      "bed_db": -14.4,
+      "bed_in_gaps_db": -13.7,
+      "speech_pct": 98.5
+     },
+     {
+      "minute": 21,
+      "voice_db": -16.1,
+      "bed_db": -14.3,
+      "bed_in_gaps_db": -16.3,
+      "speech_pct": 97.2
+     },
+     {
+      "minute": 22,
+      "voice_db": -15.9,
+      "bed_db": -14.3,
+      "bed_in_gaps_db": -14.9,
+      "speech_pct": 97.3
+     },
+     {
+      "minute": 23,
+      "voice_db": -16.2,
+      "bed_db": -14.4,
+      "bed_in_gaps_db": -15.0,
+      "speech_pct": 96.3
+     },
+     {
+      "minute": 24,
+      "voice_db": -16.0,
+      "bed_db": -14.5,
+      "bed_in_gaps_db": -16.1,
+      "speech_pct": 96.8
+     },
+     {
+      "minute": 25,
+      "voice_db": -16.1,
+      "bed_db": -13.9,
+      "bed_in_gaps_db": -14.6,
+      "speech_pct": 98.7
+     },
+     {
+      "minute": 26,
+      "voice_db": -15.7,
+      "bed_db": -14.6,
+      "bed_in_gaps_db": -15.3,
+      "speech_pct": 96.8
+     },
+     {
+      "minute": 27,
+      "voice_db": -15.8,
+      "bed_db": -15.7,
+      "bed_in_gaps_db": -39.7,
+      "speech_pct": 73.0
+     }
+    ]
+   },
+   "whisper_check": {
+    "available": true,
+    "model": "whisper.cpp ggml-base (int8), 4 threads",
+    "slice_start_s": 500.2,
+    "slice_len_s": 120,
+    "segments": 26,
+    "words": 409,
+    "wpm_whisper": 204.2,
+    "caption_wpm_speaking": 163.1,
+    "delta_wpm": 41.1,
+    "whisper_pause_median_s": null,
+    "whisper_pauses_over_0_35s": 0
+   }
+  },
+  {
+   "video_id": "4gZiO9NjSmE",
+   "title": null,
+   "duration_s": 1650.4,
+   "narration": {
+    "words": 3740,
+    "speech_span_s": 1637.3,
+    "wpm_speaking": 137.1,
+    "wpm_gross": 136.0,
+    "speech_pct_of_runtime": 82.0,
+    "per_minute": [
+     {
+      "minute": 0,
+      "words": 142,
+      "wpm": 142.0
+     },
+     {
+      "minute": 1,
+      "words": 73,
+      "wpm": 73.0
+     },
+     {
+      "minute": 2,
+      "words": 150,
+      "wpm": 150.0
+     },
+     {
+      "minute": 3,
+      "words": 153,
+      "wpm": 153.0
+     },
+     {
+      "minute": 4,
+      "words": 141,
+      "wpm": 141.0
+     },
+     {
+      "minute": 5,
+      "words": 139,
+      "wpm": 139.0
+     },
+     {
+      "minute": 6,
+      "words": 152,
+      "wpm": 152.0
+     },
+     {
+      "minute": 7,
+      "words": 163,
+      "wpm": 163.0
+     },
+     {
+      "minute": 8,
+      "words": 135,
+      "wpm": 135.0
+     },
+     {
+      "minute": 9,
+      "words": 131,
+      "wpm": 131.0
+     },
+     {
+      "minute": 10,
+      "words": 147,
+      "wpm": 147.0
+     },
+     {
+      "minute": 11,
+      "words": 143,
+      "wpm": 143.0
+     },
+     {
+      "minute": 12,
+      "words": 134,
+      "wpm": 134.0
+     },
+     {
+      "minute": 13,
+      "words": 162,
+      "wpm": 162.0
+     },
+     {
+      "minute": 14,
+      "words": 152,
+      "wpm": 152.0
+     },
+     {
+      "minute": 15,
+      "words": 144,
+      "wpm": 144.0
+     },
+     {
+      "minute": 16,
+      "words": 157,
+      "wpm": 157.0
+     },
+     {
+      "minute": 17,
+      "words": 135,
+      "wpm": 135.0
+     },
+     {
+      "minute": 18,
+      "words": 121,
+      "wpm": 121.0
+     },
+     {
+      "minute": 19,
+      "words": 112,
+      "wpm": 112.0
+     },
+     {
+      "minute": 20,
+      "words": 152,
+      "wpm": 152.0
+     },
+     {
+      "minute": 21,
+      "words": 149,
+      "wpm": 149.0
+     },
+     {
+      "minute": 22,
+      "words": 144,
+      "wpm": 144.0
+     },
+     {
+      "minute": 23,
+      "words": 122,
+      "wpm": 122.0
+     },
+     {
+      "minute": 24,
+      "words": 117,
+      "wpm": 117.0
+     },
+     {
+      "minute": 25,
+      "words": 128,
+      "wpm": 128.0
+     },
+     {
+      "minute": 26,
+      "words": 92,
+      "wpm": 92.0
+     },
+     {
+      "minute": 27,
+      "words": 50,
+      "wpm": 98.8
+     }
+    ]
+   },
+   "pauses": {
+    "count": 749,
+    "median_s": 0.84,
+    "p90_s": 1.32,
+    "max_s": 27.78,
+    "per_minute": 27.23,
+    "histogram": {
+     "0.6-0.8s": 364,
+     "0.8-1.2s": 277,
+     "1.2-2.0s": 72,
+     "2.0-3.0s": 12,
+     "3.0s+": 24
+    },
+    "dramatic_pauses": [
+     {
+      "at": 1557.9,
+      "length_s": 27.78,
+      "before": "पे"
+     },
+     {
+      "at": 69.48,
+      "length_s": 15.12,
+      "before": "15:45"
+     },
+     {
+      "at": 1153.62,
+      "length_s": 10.02,
+      "before": "प्रेशर"
+     },
+     {
+      "at": 1107.36,
+      "length_s": 9.9,
+      "before": "का"
+     },
+     {
+      "at": 708.36,
+      "length_s": 5.76,
+      "before": "दिया"
+     },
+     {
+      "at": 1532.16,
+      "length_s": 5.52,
+      "before": "है"
+     },
+     {
+      "at": 595.08,
+      "length_s": 5.28,
+      "before": "बैठे"
+     },
+     {
+      "at": 105.24,
+      "length_s": 5.16,
+      "before": "पीस"
+     },
+     {
+      "at": 1041.36,
+      "length_s": 5.16,
+      "before": "था"
+     },
+     {
+      "at": 585.9,
+      "length_s": 4.86,
+      "before": "जाए"
+     },
+     {
+      "at": 777.48,
+      "length_s": 4.74,
+      "before": "दबाएगा"
+     },
+     {
+      "at": 1464.18,
+      "length_s": 4.68,
+      "before": "थे"
+     }
+    ],
+    "measurement_note": "True acoustic pauses cannot be isolated here: the music bed fills the voice band, so an energy-based silence detector finds almost nothing. These gaps come from caption word onsets, which cover ~75-90% of the spoken words, so gaps of 0.6-1.0 s are partly caption artefacts. The >=1.5 s list (with timestamps) is the trustworthy part."
+   },
+   "ducking": {
+    "voice_level_db": -18.8,
+    "bed_under_voice_db": -14.2,
+    "bed_in_gaps_db": -16.1,
+    "duck_depth_db": -1.9,
+    "air_under_voice_db": -34.8,
+    "air_in_gaps_db": -37.2,
+    "air_duck_db": -2.4,
+    "bed_onset_delta_db": 0.9,
+    "onsets_measured": 385,
+    "verdict": "the bed moves between speech and silence; see the two probes",
+    "bed_loud_threshold_db": -13.3,
+    "loud_music_windows": [
+     {
+      "from_s": 120,
+      "bed_db": -12.9,
+      "to_s": 240,
+      "peak_bed_db": -12.6
+     },
+     {
+      "from_s": 480,
+      "bed_db": -13.2,
+      "to_s": 540,
+      "peak_bed_db": -13.2
+     }
+    ],
+    "minute_timeline": [
+     {
+      "minute": 0,
+      "voice_db": -18.4,
+      "bed_db": -13.3,
+      "bed_in_gaps_db": -13.8,
+      "speech_pct": 87.3
+     },
+     {
+      "minute": 1,
+      "voice_db": -16.5,
+      "bed_db": -13.7,
+      "bed_in_gaps_db": -13.4,
+      "speech_pct": 49.7
+     },
+     {
+      "minute": 2,
+      "voice_db": -18.5,
+      "bed_db": -12.9,
+      "bed_in_gaps_db": -13.4,
+      "speech_pct": 87.8
+     },
+     {
+      "minute": 3,
+      "voice_db": -17.7,
+      "bed_db": -12.6,
+      "bed_in_gaps_db": -12.4,
+      "speech_pct": 90.5
+     },
+     {
+      "minute": 4,
+      "voice_db": -18.6,
+      "bed_db": -13.6,
+      "bed_in_gaps_db": -14.2,
+      "speech_pct": 88.0
+     },
+     {
+      "minute": 5,
+      "voice_db": -18.8,
+      "bed_db": -14.8,
+      "bed_in_gaps_db": -14.4,
+      "speech_pct": 89.8
+     },
+     {
+      "minute": 6,
+      "voice_db": -18.9,
+      "bed_db": -13.5,
+      "bed_in_gaps_db": -12.7,
+      "speech_pct": 91.5
+     },
+     {
+      "minute": 7,
+      "voice_db": -18.6,
+      "bed_db": -13.6,
+      "bed_in_gaps_db": -13.2,
+      "speech_pct": 94.2
+     },
+     {
+      "minute": 8,
+      "voice_db": -18.2,
+      "bed_db": -13.2,
+      "bed_in_gaps_db": -12.9,
+      "speech_pct": 85.7
+     },
+     {
+      "minute": 9,
+      "voice_db": -18.8,
+      "bed_db": -14.4,
+      "bed_in_gaps_db": -14.1,
+      "speech_pct": 77.8
+     },
+     {
+      "minute": 10,
+      "voice_db": -18.5,
+      "bed_db": -13.9,
+      "bed_in_gaps_db": -12.7,
+      "speech_pct": 88.8
+     },
+     {
+      "minute": 11,
+      "voice_db": -18.2,
+      "bed_db": -13.7,
+      "bed_in_gaps_db": -13.2,
+      "speech_pct": 82.8
+     },
+     {
+      "minute": 12,
+      "voice_db": -18.7,
+      "bed_db": -14.1,
+      "bed_in_gaps_db": -13.9,
+      "speech_pct": 79.5
+     },
+     {
+      "minute": 13,
+      "voice_db": -18.6,
+      "bed_db": -13.9,
+      "bed_in_gaps_db": -12.9,
+      "speech_pct": 91.2
+     },
+     {
+      "minute": 14,
+      "voice_db": -18.9,
+      "bed_db": -14.4,
+      "bed_in_gaps_db": -14.2,
+      "speech_pct": 91.5
+     },
+     {
+      "minute": 15,
+      "voice_db": -19.0,
+      "bed_db": -14.5,
+      "bed_in_gaps_db": -15.0,
+      "speech_pct": 87.5
+     },
+     {
+      "minute": 16,
+      "voice_db": -18.9,
+      "bed_db": -14.1,
+      "bed_in_gaps_db": -14.0,
+      "speech_pct": 94.3
+     },
+     {
+      "minute": 17,
+      "voice_db": -18.8,
+      "bed_db": -14.3,
+      "bed_in_gaps_db": -14.8,
+      "speech_pct": 83.5
+     },
+     {
+      "minute": 18,
+      "voice_db": -19.1,
+      "bed_db": -16.1,
+      "bed_in_gaps_db": -22.1,
+      "speech_pct": 73.2
+     },
+     {
+      "minute": 19,
+      "voice_db": -19.5,
+      "bed_db": -15.7,
+      "bed_in_gaps_db": -16.4,
+      "speech_pct": 67.3
+     },
+     {
+      "minute": 20,
+      "voice_db": -19.3,
+      "bed_db": -15.1,
+      "bed_in_gaps_db": -13.8,
+      "speech_pct": 91.2
+     },
+     {
+      "minute": 21,
+      "voice_db": -19.1,
+      "bed_db": -15.4,
+      "bed_in_gaps_db": -14.8,
+      "speech_pct": 85.7
+     },
+     {
+      "minute": 22,
+      "voice_db": -19.2,
+      "bed_db": -15.2,
+      "bed_in_gaps_db": -14.3,
+      "speech_pct": 87.2
+     },
+     {
+      "minute": 23,
+      "voice_db": -19.7,
+      "bed_db": -15.6,
+      "bed_in_gaps_db": -20.4,
+      "speech_pct": 78.8
+     },
+     {
+      "minute": 24,
+      "voice_db": -20.2,
+      "bed_db": -25.0,
+      "bed_in_gaps_db": -29.1,
+      "speech_pct": 74.0
+     },
+     {
+      "minute": 25,
+      "voice_db": -19.2,
+      "bed_db": -15.9,
+      "bed_in_gaps_db": -24.7,
+      "speech_pct": 76.5
+     },
+     {
+      "minute": 26,
+      "voice_db": -19.5,
+      "bed_db": -17.2,
+      "bed_in_gaps_db": -20.8,
+      "speech_pct": 52.5
+     },
+     {
+      "minute": 27,
+      "voice_db": -18.5,
+      "bed_db": -18.4,
+      "bed_in_gaps_db": -21.9,
+      "speech_pct": 52.8
+     }
+    ]
+   },
+   "whisper_check": {
+    "available": true,
+    "model": "whisper.cpp ggml-base (int8), 4 threads",
+    "slice_start_s": 495.1,
+    "slice_len_s": 120,
+    "segments": 22,
+    "words": 333,
+    "wpm_whisper": 166.4,
+    "caption_wpm_speaking": 137.1,
+    "delta_wpm": 29.3,
+    "whisper_pause_median_s": 2.04,
+    "whisper_pauses_over_0_35s": 4
+   }
+  }
+ ]
+}
