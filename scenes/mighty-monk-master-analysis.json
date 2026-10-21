@@ -1,0 +1,1345 @@
+{
+ "generated_from": {
+  "videos": [
+   {
+    "video_id": "5DTtkRhla3A",
+    "label": "26/11 Mumbai — Operation Black Tornado"
+   },
+   {
+    "video_id": "mS9AO-gSfcM",
+    "label": "1971 India–Pakistan War / Bangladesh Liberation"
+   },
+   {
+    "video_id": "UDCSMo77FMA",
+    "label": "Haji Mastan — First Don of Bombay"
+   },
+   {
+    "video_id": "KhSFC1GNgNM",
+    "label": "1993 Mumbai Serial Bomb Blasts"
+   },
+   {
+    "video_id": "-DVr8iA-1F0",
+    "label": "El Chapo Prison Break"
+   },
+   {
+    "video_id": "4gZiO9NjSmE",
+    "label": "Pokhran Nuclear Test"
+   }
+  ],
+  "pipeline": [
+   "scripts/analyze_video.py",
+   "scripts/analyze_multi.py"
+  ],
+  "per_video_artifacts": ".analysis/<video_id>/video.json"
+ },
+ "videos": [
+  {
+   "video_id": "5DTtkRhla3A",
+   "title": "26/11 Mumbai Planning & Execution | Operation Black Tornado | How NSG  Neutralise Terrorists",
+   "url": "https://youtu.be/5DTtkRhla3A",
+   "duration_s": 2326.9,
+   "resolution": "1920x1080",
+   "fps": 30.0,
+   "shots": {
+    "count": 283,
+    "cuts_per_min": 7.27,
+    "median_s": 4.6,
+    "mean_s": 8.22,
+    "min_s": 0.43,
+    "max_s": 69.73,
+    "first_shot_s": 6.6,
+    "last_shot_s": 15.9
+   },
+   "fast_cuts_0_2s": {
+    "count": 52,
+    "pct": 18.4,
+    "positions": [
+     0.034,
+     0.035,
+     0.085,
+     0.085,
+     0.086,
+     0.087,
+     0.102,
+     0.108,
+     0.123,
+     0.123,
+     0.124,
+     0.126,
+     0.127,
+     0.128,
+     0.135,
+     0.156,
+     0.157,
+     0.242,
+     0.242,
+     0.262,
+     0.265,
+     0.289,
+     0.29,
+     0.29,
+     0.314,
+     0.315,
+     0.337,
+     0.348,
+     0.353,
+     0.407,
+     0.421,
+     0.471,
+     0.675,
+     0.679,
+     0.691,
+     0.693,
+     0.844,
+     0.845,
+     0.845,
+     0.846,
+     0.846,
+     0.954,
+     0.955,
+     0.962,
+     0.976,
+     0.977,
+     0.977,
+     0.978,
+     0.978,
+     0.979,
+     0.98,
+     0.98
+    ]
+   },
+   "slow_holds_10s": {
+    "count": 78,
+    "pct": 27.6,
+    "median_s": 16.6
+   },
+   "news_cards": {
+    "count": 24,
+    "pct_shots": 8.5,
+    "pct_runtime": 13.3,
+    "median_hold_s": 10.4,
+    "mean_gap_s": 95.1,
+    "first_card_at_s": 17.8
+   },
+   "text": {
+    "shots_with_bottom_text": 93,
+    "pct": 32.9,
+    "bottom_text_y_frac": 0.704
+   },
+   "dates": {
+    "shots_with_dates": 10,
+    "pct": 3.5,
+    "year_tokens": [
+     "1939",
+     "1993",
+     "2003",
+     "2008",
+     "2018",
+     "2024"
+    ]
+   },
+   "transitions": {
+    "hard_cut": 119,
+    "soft_cut": 164
+   },
+   "audio": {
+    "voiceover_coverage_pct": 99.7,
+    "words_per_min": 197.8,
+    "words_total": 7644,
+    "active_audio_pct": 80.9,
+    "silent_runs": 1,
+    "longest_silence_s": 11.1,
+    "noise_floor_db": -29.4
+   },
+   "caption_source": "youtube auto captions (hi)",
+   "label": "26/11 Mumbai — Operation Black Tornado",
+   "upload_date": "20240810",
+   "views": 13062410
+  },
+  {
+   "video_id": "mS9AO-gSfcM",
+   "title": "Brief History of India Pakistan 1971 War | Why it happened? | Bangladesh Liberation War",
+   "url": "https://youtu.be/mS9AO-gSfcM",
+   "duration_s": 2293.9,
+   "resolution": "1920x1080",
+   "fps": 25.0,
+   "shots": {
+    "count": 410,
+    "cuts_per_min": 10.7,
+    "median_s": 2.98,
+    "mean_s": 5.59,
+    "min_s": 0.4,
+    "max_s": 56.36,
+    "first_shot_s": 13.9,
+    "last_shot_s": 13.4
+   },
+   "fast_cuts_0_2s": {
+    "count": 139,
+    "pct": 33.9,
+    "positions": [
+     0.006,
+     0.007,
+     0.011,
+     0.022,
+     0.024,
+     0.029,
+     0.043,
+     0.044,
+     0.045,
+     0.054,
+     0.055,
+     0.056,
+     0.078,
+     0.08,
+     0.081,
+     0.097,
+     0.11,
+     0.11,
+     0.111,
+     0.121,
+     0.121,
+     0.122,
+     0.163,
+     0.163,
+     0.165,
+     0.165,
+     0.166,
+     0.166,
+     0.177,
+     0.177,
+     0.179,
+     0.179,
+     0.18,
+     0.181,
+     0.181,
+     0.182,
+     0.202,
+     0.204,
+     0.204,
+     0.205,
+     0.227,
+     0.228,
+     0.23,
+     0.234,
+     0.269,
+     0.271,
+     0.272,
+     0.272,
+     0.273,
+     0.291,
+     0.296,
+     0.32,
+     0.33,
+     0.356,
+     0.356,
+     0.357,
+     0.359,
+     0.381,
+     0.381,
+     0.382,
+     0.383,
+     0.401,
+     0.401,
+     0.402,
+     0.402,
+     0.459,
+     0.481,
+     0.503,
+     0.504,
+     0.527,
+     0.551,
+     0.552,
+     0.555,
+     0.556,
+     0.558,
+     0.566,
+     0.576,
+     0.647,
+     0.647,
+     0.648,
+     0.65,
+     0.651,
+     0.655,
+     0.656,
+     0.662,
+     0.662,
+     0.744,
+     0.744,
+     0.745,
+     0.747,
+     0.763,
+     0.765,
+     0.765,
+     0.765,
+     0.767,
+     0.767,
+     0.768,
+     0.776,
+     0.776,
+     0.776,
+     0.777,
+     0.778,
+     0.778,
+     0.798,
+     0.798,
+     0.799,
+     0.799,
+     0.806,
+     0.808,
+     0.808,
+     0.831,
+     0.833,
+     0.833,
+     0.862,
+     0.894,
+     0.895,
+     0.895,
+     0.926,
+     0.927,
+     0.929,
+     0.965,
+     0.966,
+     0.966,
+     0.967,
+     0.968,
+     0.971,
+     0.972,
+     0.973,
+     0.973,
+     0.974,
+     0.991,
+     0.992,
+     0.992,
+     0.993,
+     0.993,
+     0.993,
+     0.993,
+     0.994,
+     0.994
+    ]
+   },
+   "slow_holds_10s": {
+    "count": 64,
+    "pct": 15.6,
+    "median_s": 14.6
+   },
+   "news_cards": {
+    "count": 14,
+    "pct_shots": 3.4,
+    "pct_runtime": 6.8,
+    "median_hold_s": 9.0,
+    "mean_gap_s": 164.3,
+    "first_card_at_s": 104.8
+   },
+   "text": {
+    "shots_with_bottom_text": 158,
+    "pct": 38.5,
+    "bottom_text_y_frac": 0.712
+   },
+   "dates": {
+    "shots_with_dates": 8,
+    "pct": 2.0,
+    "year_tokens": [
+     "1940",
+     "1971",
+     "1972"
+    ]
+   },
+   "transitions": {
+    "hard_cut": 203,
+    "soft_cut": 207
+   },
+   "audio": {
+    "voiceover_coverage_pct": 100.1,
+    "words_per_min": 157.0,
+    "words_total": 6007,
+    "active_audio_pct": 79.3,
+    "silent_runs": 16,
+    "longest_silence_s": 1.9,
+    "noise_floor_db": -30.5
+   },
+   "caption_source": "youtube auto captions (hi)",
+   "label": "1971 India–Pakistan War / Bangladesh Liberation",
+   "upload_date": "20230712",
+   "views": 8353840
+  },
+  {
+   "video_id": "UDCSmo77FMA",
+   "title": "Haji Mastan: First Don of Bombay | The Rise of Mumbai Mafia EP01",
+   "url": "https://youtu.be/UDCSmo77FMA",
+   "duration_s": 1554.8,
+   "resolution": "1920x1080",
+   "fps": 25.0,
+   "shots": {
+    "count": 187,
+    "cuts_per_min": 7.18,
+    "median_s": 5.8,
+    "mean_s": 8.31,
+    "min_s": 0.48,
+    "max_s": 50.08,
+    "first_shot_s": 3.9,
+    "last_shot_s": 20.8
+   },
+   "fast_cuts_0_2s": {
+    "count": 19,
+    "pct": 10.2,
+    "positions": [
+     0.003,
+     0.062,
+     0.066,
+     0.07,
+     0.101,
+     0.104,
+     0.106,
+     0.108,
+     0.135,
+     0.188,
+     0.189,
+     0.268,
+     0.287,
+     0.292,
+     0.524,
+     0.609,
+     0.619,
+     0.956,
+     0.973
+    ]
+   },
+   "slow_holds_10s": {
+    "count": 53,
+    "pct": 28.3,
+    "median_s": 14.6
+   },
+   "news_cards": {
+    "count": 16,
+    "pct_shots": 8.6,
+    "pct_runtime": 12.0,
+    "median_hold_s": 10.1,
+    "mean_gap_s": 79.6,
+    "first_card_at_s": 305.4
+   },
+   "text": {
+    "shots_with_bottom_text": 75,
+    "pct": 40.1,
+    "bottom_text_y_frac": 0.702
+   },
+   "dates": {
+    "shots_with_dates": 4,
+    "pct": 2.1,
+    "year_tokens": [
+     "1926",
+     "1974",
+     "1988"
+    ]
+   },
+   "transitions": {
+    "hard_cut": 76,
+    "soft_cut": 110,
+    "fade_out_to_black": 1
+   },
+   "audio": {
+    "voiceover_coverage_pct": 99.5,
+    "words_per_min": 187.7,
+    "words_total": 4840,
+    "active_audio_pct": 80.7,
+    "silent_runs": 3,
+    "longest_silence_s": 11.4,
+    "noise_floor_db": -29.2
+   },
+   "caption_source": "youtube auto captions (hi)",
+   "label": "Haji Mastan — First Don of Bombay",
+   "upload_date": "20250521",
+   "views": 7958972
+  },
+  {
+   "video_id": "KhSFC1GNgNM",
+   "title": "Reality of 1993 Mumbai Serial Bomb Blasts",
+   "url": "https://youtu.be/KhSFC1GNgNM",
+   "duration_s": 1638.9,
+   "resolution": "1920x1080",
+   "fps": 30.0,
+   "shots": {
+    "count": 226,
+    "cuts_per_min": 8.24,
+    "median_s": 4.65,
+    "mean_s": 7.25,
+    "min_s": 0.4,
+    "max_s": 51.2,
+    "first_shot_s": 2.0,
+    "last_shot_s": 10.4
+   },
+   "fast_cuts_0_2s": {
+    "count": 37,
+    "pct": 16.4,
+    "positions": [
+     0.001,
+     0.002,
+     0.003,
+     0.004,
+     0.007,
+     0.016,
+     0.129,
+     0.145,
+     0.196,
+     0.21,
+     0.232,
+     0.233,
+     0.422,
+     0.462,
+     0.463,
+     0.522,
+     0.522,
+     0.523,
+     0.524,
+     0.524,
+     0.525,
+     0.525,
+     0.528,
+     0.53,
+     0.531,
+     0.531,
+     0.532,
+     0.578,
+     0.579,
+     0.58,
+     0.581,
+     0.597,
+     0.66,
+     0.731,
+     0.737,
+     0.861,
+     0.993
+    ]
+   },
+   "slow_holds_10s": {
+    "count": 55,
+    "pct": 24.3,
+    "median_s": 14.7
+   },
+   "news_cards": {
+    "count": 30,
+    "pct_shots": 13.3,
+    "pct_runtime": 19.1,
+    "median_hold_s": 7.6,
+    "mean_gap_s": 50.7,
+    "first_card_at_s": 85.9
+   },
+   "text": {
+    "shots_with_bottom_text": 57,
+    "pct": 25.2,
+    "bottom_text_y_frac": 0.69
+   },
+   "dates": {
+    "shots_with_dates": 15,
+    "pct": 6.6,
+    "year_tokens": [
+     "1992",
+     "1993",
+     "1994",
+     "1995",
+     "2006",
+     "2013"
+    ]
+   },
+   "transitions": {
+    "hard_cut": 85,
+    "soft_cut": 141
+   },
+   "audio": {
+    "voiceover_coverage_pct": 100.0,
+    "words_per_min": 185.3,
+    "words_total": 5061,
+    "active_audio_pct": 80.6,
+    "silent_runs": 3,
+    "longest_silence_s": 12.3,
+    "noise_floor_db": -30.2
+   },
+   "caption_source": "youtube auto captions (hi)",
+   "label": "1993 Mumbai Serial Bomb Blasts",
+   "upload_date": "20250318",
+   "views": 5246165
+  },
+  {
+   "video_id": "-DVr8iA-1F0",
+   "title": "World's Greatest Prison Break in History | El Chapo: The King of Escape",
+   "url": "https://youtu.be/-DVr8iA-1F0",
+   "duration_s": 1667.5,
+   "resolution": "1920x1080",
+   "fps": 30.0,
+   "shots": {
+    "count": 271,
+    "cuts_per_min": 9.72,
+    "median_s": 3.67,
+    "mean_s": 6.15,
+    "min_s": 0.4,
+    "max_s": 35.73,
+    "first_shot_s": 9.8,
+    "last_shot_s": 15.8
+   },
+   "fast_cuts_0_2s": {
+    "count": 67,
+    "pct": 24.7,
+    "positions": [
+     0.044,
+     0.065,
+     0.282,
+     0.283,
+     0.285,
+     0.286,
+     0.286,
+     0.319,
+     0.319,
+     0.32,
+     0.326,
+     0.369,
+     0.401,
+     0.402,
+     0.435,
+     0.483,
+     0.485,
+     0.486,
+     0.487,
+     0.488,
+     0.496,
+     0.501,
+     0.506,
+     0.508,
+     0.521,
+     0.531,
+     0.532,
+     0.533,
+     0.534,
+     0.535,
+     0.542,
+     0.542,
+     0.543,
+     0.549,
+     0.57,
+     0.571,
+     0.574,
+     0.581,
+     0.589,
+     0.589,
+     0.59,
+     0.591,
+     0.592,
+     0.592,
+     0.593,
+     0.593,
+     0.594,
+     0.594,
+     0.594,
+     0.595,
+     0.625,
+     0.672,
+     0.673,
+     0.677,
+     0.715,
+     0.716,
+     0.757,
+     0.758,
+     0.766,
+     0.767,
+     0.857,
+     0.867,
+     0.873,
+     0.897,
+     0.931,
+     0.939,
+     0.944
+    ]
+   },
+   "slow_holds_10s": {
+    "count": 55,
+    "pct": 20.3,
+    "median_s": 14.4
+   },
+   "news_cards": {
+    "count": 19,
+    "pct_shots": 7.0,
+    "pct_runtime": 8.4,
+    "median_hold_s": 7.2,
+    "mean_gap_s": 75.5,
+    "first_card_at_s": 272.6
+   },
+   "text": {
+    "shots_with_bottom_text": 92,
+    "pct": 33.9,
+    "bottom_text_y_frac": 0.698
+   },
+   "dates": {
+    "shots_with_dates": 16,
+    "pct": 5.9,
+    "year_tokens": [
+     "1954",
+     "1957",
+     "1980",
+     "1989",
+     "1993",
+     "2001",
+     "2006",
+     "2014",
+     "2015"
+    ]
+   },
+   "transitions": {
+    "hard_cut": 130,
+    "soft_cut": 141
+   },
+   "audio": {
+    "voiceover_coverage_pct": 99.5,
+    "words_per_min": 184.9,
+    "words_total": 5114,
+    "active_audio_pct": 80.4,
+    "silent_runs": 4,
+    "longest_silence_s": 11.2,
+    "noise_floor_db": -29.6
+   },
+   "caption_source": "youtube auto captions (hi)",
+   "label": "El Chapo Prison Break",
+   "upload_date": "20241023",
+   "views": 4321934
+  },
+  {
+   "video_id": "4gZiO9NjSmE",
+   "title": "How India Become a Nuclear Power? | The Story of Pokhran",
+   "url": "https://youtu.be/4gZiO9NjSmE",
+   "duration_s": 1650.4,
+   "resolution": "1920x1080",
+   "fps": 25.0,
+   "shots": {
+    "count": 266,
+    "cuts_per_min": 9.63,
+    "median_s": 3.54,
+    "mean_s": 6.2,
+    "min_s": 0.4,
+    "max_s": 90.96,
+    "first_shot_s": 2.6,
+    "last_shot_s": 13.8
+   },
+   "fast_cuts_0_2s": {
+    "count": 57,
+    "pct": 21.4,
+    "positions": [
+     0.009,
+     0.01,
+     0.019,
+     0.037,
+     0.041,
+     0.042,
+     0.043,
+     0.043,
+     0.044,
+     0.045,
+     0.046,
+     0.051,
+     0.051,
+     0.051,
+     0.052,
+     0.054,
+     0.054,
+     0.059,
+     0.059,
+     0.06,
+     0.098,
+     0.099,
+     0.176,
+     0.195,
+     0.222,
+     0.231,
+     0.365,
+     0.392,
+     0.414,
+     0.521,
+     0.619,
+     0.637,
+     0.639,
+     0.64,
+     0.642,
+     0.694,
+     0.695,
+     0.695,
+     0.71,
+     0.714,
+     0.715,
+     0.718,
+     0.737,
+     0.738,
+     0.738,
+     0.747,
+     0.784,
+     0.906,
+     0.91,
+     0.941,
+     0.976,
+     0.979,
+     0.985,
+     0.985,
+     0.988,
+     0.988,
+     0.989
+    ]
+   },
+   "slow_holds_10s": {
+    "count": 48,
+    "pct": 18.0,
+    "median_s": 14.6
+   },
+   "news_cards": {
+    "count": 19,
+    "pct_shots": 7.1,
+    "pct_runtime": 11.5,
+    "median_hold_s": 9.0,
+    "mean_gap_s": 84.3,
+    "first_card_at_s": 85.9
+   },
+   "text": {
+    "shots_with_bottom_text": 95,
+    "pct": 35.7,
+    "bottom_text_y_frac": 0.736
+   },
+   "dates": {
+    "shots_with_dates": 7,
+    "pct": 2.6,
+    "year_tokens": [
+     "1963",
+     "1964",
+     "1974",
+     "1994",
+     "1996",
+     "1998",
+     "2009"
+    ]
+   },
+   "transitions": {
+    "hard_cut": 140,
+    "soft_cut": 126
+   },
+   "audio": {
+    "voiceover_coverage_pct": 100.0,
+    "words_per_min": 153.6,
+    "words_total": 4231,
+    "active_audio_pct": 72.7,
+    "silent_runs": 37,
+    "longest_silence_s": 4.0,
+    "noise_floor_db": -28.2
+   },
+   "caption_source": "youtube auto captions (hi)",
+   "label": "Pokhran Nuclear Test",
+   "upload_date": "20230428",
+   "views": 2822974
+  }
+ ],
+ "video_by_video_metrics": {
+  "5DTtkRhla3A": {
+   "label": "26/11 Mumbai — Operation Black Tornado",
+   "title": "26/11 Mumbai Planning & Execution | Operation Black Tornado | How NSG  Neutralise Terrorists",
+   "duration_min": 38.8,
+   "shots": 283,
+   "median_shot_s": 4.6,
+   "fast_cuts_0_2s": 52,
+   "slow_holds_10s": 78,
+   "news_cards": 24,
+   "news_card_share_runtime_pct": 13.3,
+   "dates_on_screen": 10,
+   "hard_cuts": 119,
+   "fades": 0,
+   "voiceover_coverage_pct": 99.7,
+   "words_per_min": 197.8
+  },
+  "mS9AO-gSfcM": {
+   "label": "1971 India–Pakistan War / Bangladesh Liberation",
+   "title": "Brief History of India Pakistan 1971 War | Why it happened? | Bangladesh Liberation War",
+   "duration_min": 38.2,
+   "shots": 410,
+   "median_shot_s": 2.98,
+   "fast_cuts_0_2s": 139,
+   "slow_holds_10s": 64,
+   "news_cards": 14,
+   "news_card_share_runtime_pct": 6.8,
+   "dates_on_screen": 8,
+   "hard_cuts": 203,
+   "fades": 0,
+   "voiceover_coverage_pct": 100.1,
+   "words_per_min": 157.0
+  },
+  "UDCSmo77FMA": {
+   "label": "Haji Mastan — First Don of Bombay",
+   "title": "Haji Mastan: First Don of Bombay | The Rise of Mumbai Mafia EP01",
+   "duration_min": 25.9,
+   "shots": 187,
+   "median_shot_s": 5.8,
+   "fast_cuts_0_2s": 19,
+   "slow_holds_10s": 53,
+   "news_cards": 16,
+   "news_card_share_runtime_pct": 12.0,
+   "dates_on_screen": 4,
+   "hard_cuts": 76,
+   "fades": 1,
+   "voiceover_coverage_pct": 99.5,
+   "words_per_min": 187.7
+  },
+  "KhSFC1GNgNM": {
+   "label": "1993 Mumbai Serial Bomb Blasts",
+   "title": "Reality of 1993 Mumbai Serial Bomb Blasts",
+   "duration_min": 27.3,
+   "shots": 226,
+   "median_shot_s": 4.65,
+   "fast_cuts_0_2s": 37,
+   "slow_holds_10s": 55,
+   "news_cards": 30,
+   "news_card_share_runtime_pct": 19.1,
+   "dates_on_screen": 15,
+   "hard_cuts": 85,
+   "fades": 0,
+   "voiceover_coverage_pct": 100.0,
+   "words_per_min": 185.3
+  },
+  "-DVr8iA-1F0": {
+   "label": "El Chapo Prison Break",
+   "title": "World's Greatest Prison Break in History | El Chapo: The King of Escape",
+   "duration_min": 27.8,
+   "shots": 271,
+   "median_shot_s": 3.67,
+   "fast_cuts_0_2s": 67,
+   "slow_holds_10s": 55,
+   "news_cards": 19,
+   "news_card_share_runtime_pct": 8.4,
+   "dates_on_screen": 16,
+   "hard_cuts": 130,
+   "fades": 0,
+   "voiceover_coverage_pct": 99.5,
+   "words_per_min": 184.9
+  },
+  "4gZiO9NjSmE": {
+   "label": "Pokhran Nuclear Test",
+   "title": "How India Become a Nuclear Power? | The Story of Pokhran",
+   "duration_min": 27.5,
+   "shots": 266,
+   "median_shot_s": 3.54,
+   "fast_cuts_0_2s": 57,
+   "slow_holds_10s": 48,
+   "news_cards": 19,
+   "news_card_share_runtime_pct": 11.5,
+   "dates_on_screen": 7,
+   "hard_cuts": 140,
+   "fades": 0,
+   "voiceover_coverage_pct": 100.0,
+   "words_per_min": 153.6
+  }
+ },
+ "visual_pattern": {
+  "question": "Same transitions? Dates on screen? Same font/position?",
+  "transitions": {
+   "hard_cut_share_pct": [
+    42.0,
+    49.5,
+    40.9,
+    37.6,
+    48.0,
+    52.6
+   ],
+   "fade_counts": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "verdict": "mixed"
+  },
+  "dates": {
+   "shots_with_dates": [
+    10,
+    8,
+    4,
+    15,
+    16,
+    7
+   ],
+   "pct_of_shots": [
+    3.5,
+    2.0,
+    2.1,
+    6.6,
+    5.9,
+    2.6
+   ],
+   "year_tokens": [
+    "1926",
+    "1939",
+    "1940",
+    "1954",
+    "1957",
+    "1963",
+    "1964",
+    "1971",
+    "1972",
+    "1974",
+    "1980",
+    "1988",
+    "1989",
+    "1992",
+    "1993",
+    "1994",
+    "1995",
+    "1996",
+    "1998",
+    "2001"
+   ],
+   "every_video_has_dates": true
+  },
+  "text_placement": {
+   "bottom_text_shots": [
+    93,
+    158,
+    75,
+    57,
+    92,
+    95
+   ],
+   "text_position_verdict": "bottom third"
+  },
+  "fonts_note": "Cards are raw screenshots of news pages, so the typeface is whatever the publication used (serif for The Hindu/TOI, sans for Aaj Tak cards). Mighty Monk's own lower-thirds are a single bold sans in white; no decorative type.",
+  "cards_note": "Cards are full-frame screenshots with the outlet's logo visible, often with a slow push-in, and are held 15-40 s while narration reads/summarises them."
+ },
+ "audio_pattern": {
+  "question": "Background music? Voiceover pacing?",
+  "music": "continuous score under the narration; the track is active for 73-81% of the runtime, with occasional quieter beats of 2-12 s",
+  "music_measured": {
+   "active_audio_pct": [
+    80.9,
+    79.3,
+    80.7,
+    80.6,
+    80.4,
+    72.7
+   ],
+   "longest_silence_s": [
+    11.1,
+    1.9,
+    11.4,
+    12.3,
+    11.2,
+    4.0
+   ]
+  },
+  "voiceover": {
+   "coverage_pct": [
+    99.7,
+    100.0,
+    99.5,
+    100.0,
+    99.5,
+    100.0
+   ],
+   "words_per_min": [
+    197.8,
+    157.0,
+    187.7,
+    185.3,
+    184.9,
+    153.6
+   ],
+   "note": "Narration is continuous and runs over cards as well; there are no silent beat sections."
+  }
+ },
+ "signature_rules": [
+  {
+   "n": 1,
+   "rule": "Har film 26-39 minute ki hoti hai aur cutting tez hai: 7-11 cuts per minute (median shot 3-6 s).",
+   "evidence": {
+    "runtime_min": [
+     38.8,
+     38.2,
+     25.9,
+     27.3,
+     27.8,
+     27.5
+    ],
+    "cuts_per_min": [
+     7.27,
+     10.7,
+     7.18,
+     8.24,
+     9.72,
+     9.63
+    ],
+    "median_shot_s": [
+     4.6,
+     2.98,
+     5.8,
+     4.65,
+     3.67,
+     3.54
+    ]
+   },
+   "holds_in": 6,
+   "confidence": "high",
+   "deviations": []
+  },
+  {
+   "n": 2,
+   "rule": "Cold open hamesha ek hi establishing shot hota hai — map, Google-Earth zoom, aerial ya archival — 2-14 s, koi title card nahi, narration turant shuru.",
+   "evidence": {
+    "first_shot_s": [
+     6.6,
+     13.9,
+     3.9,
+     2.0,
+     9.8,
+     2.6
+    ],
+    "first_shot_median_s": 5.2
+   },
+   "holds_in": 6,
+   "confidence": "high",
+   "deviations": []
+  },
+  {
+   "n": 3,
+   "rule": "Pacing bimodal hai: har film mein 10-34% cuts 2 s se chhote hain aur 16-28% shots 10 s se lambe — ek hi tempo nahi chalta.",
+   "evidence": {
+    "fast_cuts_0_2s_pct": [
+     18.4,
+     33.9,
+     10.2,
+     16.4,
+     24.7,
+     21.4
+    ],
+    "slow_holds_10s_pct": [
+     27.6,
+     15.6,
+     28.3,
+     24.3,
+     20.3,
+     18.0
+    ]
+   },
+   "holds_in": 6,
+   "confidence": "high",
+   "deviations": []
+  },
+  {
+   "n": 4,
+   "rule": "News cards hi 'chapter' hain: 14-30 cards per film, median hold 7-10 s, pehla card 1-5 minute ke andar, aur runtime ka 7-19% in cards par jata hai.",
+   "evidence": {
+    "cards_per_video": [
+     24,
+     14,
+     16,
+     30,
+     19,
+     19
+    ],
+    "median_hold_s": [
+     10.4,
+     9.0,
+     10.1,
+     7.6,
+     7.2,
+     9.0
+    ],
+    "first_card_s": [
+     17.8,
+     104.8,
+     305.4,
+     85.9,
+     272.6,
+     85.9
+    ],
+    "share_runtime_pct": [
+     13.3,
+     6.8,
+     12.0,
+     19.1,
+     8.4,
+     11.5
+    ],
+    "mean_gap_s": [
+     95.1,
+     164.3,
+     79.6,
+     50.7,
+     75.5,
+     84.3
+    ],
+    "cards_per_min": [
+     0.62,
+     0.37,
+     0.62,
+     1.1,
+     0.68,
+     0.69
+    ]
+   },
+   "holds_in": 6,
+   "confidence": "high",
+   "deviations": []
+  },
+  {
+   "n": 5,
+   "rule": "Date/year screen par aata hai, narration mein nahi: har film mein 4-16 shots par saal dikhta hai (1939 se 2024 tak).",
+   "evidence": {
+    "shots_with_dates": [
+     10,
+     8,
+     4,
+     15,
+     16,
+     7
+    ],
+    "year_tokens_seen": [
+     "1926",
+     "1939",
+     "1940",
+     "1954",
+     "1957",
+     "1963",
+     "1964",
+     "1971",
+     "1972",
+     "1974",
+     "1980",
+     "1988",
+     "1989",
+     "1992",
+     "1993"
+    ]
+   },
+   "holds_in": 6,
+   "confidence": "high",
+   "deviations": []
+  },
+  {
+   "n": 6,
+   "rule": "Text bottom third mein baithta hai: OCR se text ka average y-position frame ki 69-74% height par hai — koi centre title, koi top caption nahi.",
+   "evidence": {
+    "text_y_fraction": [
+     0.704,
+     0.712,
+     0.702,
+     0.69,
+     0.698,
+     0.736
+    ],
+    "shots_with_bottom_text": [
+     93,
+     158,
+     75,
+     57,
+     92,
+     95
+    ]
+   },
+   "holds_in": 6,
+   "confidence": "high",
+   "deviations": []
+  },
+  {
+   "n": 7,
+   "rule": "Transition dissolve nahi, cut hai: 1,643 shots mein sirf 1 fade-marked shot; baaki sab hard/soft cuts.",
+   "evidence": {
+    "fade_shot_counts": [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0
+    ],
+    "fades_total": 1,
+    "hard_cut_score_share_pct": [
+     42.0,
+     49.5,
+     40.9,
+     37.6,
+     48.0,
+     52.6
+    ]
+   },
+   "holds_in": 6,
+   "confidence": "high",
+   "deviations": []
+  },
+  {
+   "n": 8,
+   "rule": "Narration continuous hai — Hindi VO film ke 99.5-100% runtime par — aur music bed bhi chalta rehta hai; 2-12 s ke khamosh beats kabhi-kabhi aate hain.",
+   "evidence": {
+    "voiceover_coverage_pct": [
+     99.7,
+     100.0,
+     99.5,
+     100.0,
+     99.5,
+     100.0
+    ],
+    "active_audio_pct": [
+     80.9,
+     79.3,
+     80.7,
+     80.6,
+     80.4,
+     72.7
+    ],
+    "longest_silence_s": [
+     11.1,
+     1.9,
+     11.4,
+     12.3,
+     11.2,
+     4.0
+    ]
+   },
+   "holds_in": 6,
+   "confidence": "high",
+   "deviations": []
+  },
+  {
+   "n": 9,
+   "rule": "Narration ki raftaar 154-198 Hindi words per minute hai — tez, but steadier: picture rest kar sakti hai kyunki awaaz nahi rukti.",
+   "evidence": {
+    "words_per_min": [
+     197.8,
+     157.0,
+     187.7,
+     185.3,
+     184.9,
+     153.6
+    ],
+    "median_wpm": 185.1
+   },
+   "holds_in": 6,
+   "confidence": "medium",
+   "deviations": []
+  },
+  {
+   "n": 10,
+   "rule": "Film channel end card par khatam hoti hai — logo + subscribe — 10-21 s, kahani band hone ke baad.",
+   "evidence": {
+    "last_shot_s": [
+     15.9,
+     13.4,
+     20.8,
+     10.4,
+     15.8,
+     13.8
+    ]
+   },
+   "holds_in": 6,
+   "confidence": "high",
+   "deviations": []
+  }
+ ],
+ "caveats": [
+  "Thresholds in the rules are calibrated on these six videos, so 'holds 6/6' is descriptive, not predictive.",
+  "The seventh Mighty Monk video analysed earlier (Uttarkashi tunnel, N71y5expfBo) has a 6.2 s median shot — above this set's 3.0-5.8 s range — so the median is a range, not a constant.",
+  "Card detection is OCR-based: cards = text-heavy frames, so a map or a dense graphic can be counted as a card.",
+  "Date detection uses OCR, so Devanagari dates are only caught when the year is in Latin digits.",
+  "Transitions below the 0.24 scene threshold (slow dissolves) are not counted as cuts.",
+  "Words-per-minute uses the Hindi auto-caption text, so it measures narration pace, not script length.",
+  "Shot boundaries come from frame-difference scoring, so an extremely fast montage can merge two shots into one."
+ ]
+}
